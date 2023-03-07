@@ -4,8 +4,6 @@
 
 main(){
 	system("cls");
-
-	printf("Teste")
 	
 	float a, b, c, x1, x2, d;
 	
