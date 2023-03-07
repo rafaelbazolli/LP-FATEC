@@ -1,24 +1,25 @@
-#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
+#include<stdio.h> // ResponsÃ¡vel pelos comandos printf e scanf
+#include<conio.h> // ResponsÃ¡vel pelo comando getch
+#include<windows.h> // ResponsÃ¡vel pelo comando system
 
 main(){
-	/* Criar um programa em linguagem C que faça a conversão de m em km hm, dam, dc, dm e mm*/
-	system("cls");
+	/* Criar um programa em linguagem C que faï¿½a a conversï¿½o de m em km hm, dam, dc, dm e mm*/
+	system("cls"); // Limpa a tela do prompt 
 	
-	float metros, km, hm, dam, dc, cm, mm;
+	float metros, km, hm, dam, dc, cm, mm; // Declaracao das variaveis do tipo real(ponto flutuante)
 	
-	printf("Digite um valor em metros: \n");
-	scanf("%f", &metros);
+	printf("Digite um valor em metros: \n"); // Imprime o texto para o usuario
+	scanf("%f", &metros); // Recebe o valor digitado pelo usuario, em metros
 	
-	km = metros / 1000;
-	hm = metros / 100;
-	dam = metros / 10;
-	dc = metros * 10;
-	cm = metros * 100;
-	mm = metros * 1000;
+	km = metros / 1000; // Execucao da conversao para quilometros
+	hm = metros / 100; // Execucao da conversao para hectometros
+	dam = metros / 10; // Execucao da conversao para decametros
+	dc = metros * 10; // Execucao da conversao para decimetros
+	cm = metros * 100; // Execucao da conversao para centimetros
+	mm = metros * 1000; // Execucao da conversao para milimetros 
 	
 	printf("A medida em metros e %f. Equivale a: \n%f km\n%f hm\n%f dam\n%.3f dc\n%.3f cm\n%.3f mm", metros, km, hm, dam, dc, cm, mm);
-	
-	getch();
+	// O comando acima exibe o valor de todas as variaveis calculadas anteriormente 
+
+	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }

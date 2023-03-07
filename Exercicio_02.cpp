@@ -3,6 +3,7 @@
 #include<math.h>
 
 main(){
+	
 	system("cls");
 	
 	float a, b, c, x1, x2, d;
