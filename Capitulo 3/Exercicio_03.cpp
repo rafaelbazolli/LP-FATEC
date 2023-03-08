@@ -3,82 +3,83 @@
 #include<windows.h>
 
 main() {
-	/* Criar um programa (CALCULADORA ) em linguagem C que calcule as quatro operações básicas ( + ,- , / e * ). */
-	system("cls");
-	
+	/* Criar um programa (CALCULADORA ) em linguagem C que calcule as quatro operaï¿½ï¿½es bï¿½sicas ( + ,- , / e * ). */
 	int opcao, retornoMenu;
 	float num1, num2, resultado;
 	
 	menu:
+	system("cls");
 	printf("CALCULADORA\n");
-	printf("Operacoes:\n1- Adicao\n2- Subtracao\n3- Multiplicacao\n4- Divisao \n5 - SairDigite a operacao desejada: \n");
+	printf("Operacoes:\n1- Adicao\n2- Subtracao\n3- Multiplicacao\n4- Divisao \n5 - Sair\nDigite a operacao desejada: \n");
 	scanf("%i", &opcao);
 	
-	if(opcao > 4 || opcao < 1) {
-		printf("Opcao invalida!");
-	}
-	else 
-	{
-		entradaValores:
-		printf("\nDigite o primeiro numero: ");
-		scanf("%f", &num1);
-		printf("\nDigite o segundo numero: ");
-		scanf("%f", &num2);	
-	}
-	
-	
-	if(opcao == 1) {
-		soma:
-		resultado = num1 + num2;
-		printf("%.2f + %.2f = %.2f", num1, num2, resultado);
-		
-		printf("Deseja efetuar outra soma?(1- SIM / 2 - NAO)");
-			scanf("%i", &retornoMenu);
-			
-			if(retornoMenu == 1) {
-				goto soma;
-			}
+	if (opcao == 5) {
+		printf("\n\nEncerrando o programa...");
+		return 0;
 	}
 	else
-		if(opcao == 2) {
-			subtracao:
-			resultado = num1 - num2;
-			printf("%.2f - %.2f = %.2f", num1, num2, resultado);
-			
-			printf("Deseja efetuar outra subtracao?(1- SIM / 2 - NAO)");
-			scanf("%i", &retornoMenu);
-			
-			if(retornoMenu == 1) {
-				goto subtracao;
-			}
+		if(opcao > 5 || opcao < 1) {
+			printf("\nOpcao invalida! Retornando ao menu...");
+			Sleep(2000);
+			goto menu;
 		}
-		else
-			if(opcao == 3) {
-				multiplicacao:
-				resultado = num1 * num2;
-				printf("%.2f * %.2f = %.2f", num1, num2, resultado);
-				
-				printf("Deseja efetuar outra multiplicacao?(1- SIM / 2 - NAO)");
-				scanf("%i", &retornoMenu);
+		else 
+			entradaValores:
+			printf("\nDigite o primeiro numero: ");
+			scanf("%f", &num1);
+			printf("\nDigite o segundo numero: ");
+			scanf("%f", &num2);	
 			
-				if(retornoMenu == 1) {
-					goto multiplicacao;
-				}
+			if(opcao == 1) {
+				resultado = num1 + num2;
+				printf("%.2f + %.2f = %.2f", num1, num2, resultado);
+				
+				printf("\nDeseja efetuar outra soma?(1- SIM / 2 - NAO)  ");
+					scanf("%i", &retornoMenu);
+					
+					if(retornoMenu == 1) {
+						goto entradaValores;
+					}
 			}
 			else
-				if(opcao == 4) {
-					divisao:
-					resultado = num1 / num2;
-					printf("%.2f / %.2f = %.2f", num1, num2, resultado);
+				if(opcao == 2) {
+					resultado = num1 - num2;
+					printf("%.2f - %.2f = %.2f", num1, num2, resultado);
+					
+					printf("\nDeseja efetuar outra subtracao?(1- SIM / 2 - NAO)  ");
+					scanf("%i", &retornoMenu);
+					
+					if(retornoMenu == 1) {
+						goto entradaValores;
+					}
 				}
-				
-				printf("Deseja efetuar outra divisao?(1- SIM / 2 - NAO)");
-				scanf("%i", &retornoMenu);
-			
-				if(retornoMenu == 1) {
-					goto divisao;
-				}
-	
+				else
+					if(opcao == 3) {
+						resultado = num1 * num2;
+						printf("%.2f * %.2f = %.2f", num1, num2, resultado);
+						
+						printf("\nDeseja efetuar outra multiplicacao?(1- SIM / 2 - NAO) ");
+						scanf("%i", &retornoMenu);
+					
+						if(retornoMenu == 1) {
+							goto entradaValores;
+						}
+					}
+					else
+						if(opcao == 4) {
+							resultado = num1 / num2;
+							printf("%.2f / %.2f = %.2f", num1, num2, resultado);
+						
+						
+							printf("\nDeseja efetuar outra divisao?(1- SIM / 2 - NAO) ");
+							scanf("%i", &retornoMenu);
+					
+							if(retornoMenu == 1) {
+								goto entradaValores;
+							}
+						}			
+			goto menu;
+
 	getch();
 	end:;
 }
