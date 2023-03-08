@@ -9,8 +9,8 @@ main(){
 	
 	float raio, perimetro, area; // Declaracao das variaveis do tipo real(ponto flutuante)
 	
-	printf("Calculadora de perimetro e area de circunferencia\n");
-	printf("Digite o valor do raio: \n");
+	printf("Calculadora de perimetro e area de circunferencia\n"); // Imprime o texto para o usuario
+	printf("Digite o valor do raio: \n"); // Imprime o texto para o usuario
 	scanf("%f", &raio);
 	
 	perimetro = 2 * 3.14 * raio;
