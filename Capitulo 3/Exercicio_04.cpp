@@ -12,6 +12,7 @@ main() {
 	printf("Programa para ordenar valores\n");
 	printf("Quantos valores voce deseja ordenar(2, 3 ou 4)? ");
 	scanf("%f", &quantidade);	
+	
 			
 	getch();
 }
