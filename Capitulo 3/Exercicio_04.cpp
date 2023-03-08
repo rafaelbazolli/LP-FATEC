@@ -79,116 +79,50 @@ main() {
 				if(quant == 4) { // Se a quantidade de valores a ordenar for 4
 					printf("\nDigite o terceiro numero: ");
 					scanf("%f", &num3);
+
+					if(num3 > maior) {
+					meio = maior;
+					maior = num3;
+					} 
+					else
+						if(num3 < menor) {
+							meio = menor;
+							menor = num3;
+						}
+						else { // Se num3 nao for menor, nem maior, entao ele e igual aos outros, e assume a posicao do meio
+							meio = num3;
+						}
+
 					printf("\nDigite o quarto numero: ");
 					scanf("%f", &num4);
 					
-					if((num3 > num4) && (num3 > maior)) { // Sendo o num3 maior que todos...
-					// Agora e necessario verificar a posicao do num4 em relacao ao menor numero
-						if(num4 == menor) { 
-							meio = num4;
-							meio2 = maior;
-							maior = num3;
-						}
-						else 
-							if(num4 < menor) {
-								meio = menor;
-								menor = num4;
-								meio2 = maior;
-								maior = num3;
-							}
-							else { // Se o num4 for maior que o atual menor numero
-								//Agora precisa ser validado se o maior e o menor valores sao iguais, para ordenar o restante
-								if(menor == maior){
-									meio = maior;
-									meio2 = num4;
-									maior = num3;
-								}
-								else {
-									meio = num4;
-									meio2 = maior;
-									maior = num3;
-								}
-							}
+					// Validando a posicao do num4
+					if(num4 > maior) { // Se num4 e maior que todos
+						meio2 = maior;
+						maior = num4;
 					}
-
-					if((num4 > num3) && (num4 > maior)) { // Sendo o num4 maior que todos...
-						// Agora e necessario verificar a posicao do num3 em relacao ao menor
-						if(num3 == menor) {
-							meio = num3;
-							meio2 = maior;
-							maior = num4;
-						}
-						else {
-							if(num3 < menor) {
-								meio = menor;
-								menor = num3;
-								meio2 = maior;
-								maior = num3;
-							}
-							else { // Se o num3 for maior que o atual menor
-								//Agora precisa ser validado se o maior e o menor valores sao iguais, para ordenar o restante
-								if(menor == maior){
-									meio = maior;
-									meio2 = num3;
-									maior = num4;
-								}
-								else {
-									meio = num3;
-									meio2 = maior;
-									maior = num4;
-								}
-								
-							}
-						}
-					}
-
-					if((num3 > num4) && (num3 < maior)) { // Sendo num3 maior que o num4, porem menor que o atual maior
-						// Nesse ponto, ja se sabe que o maior sera mantido, e meio2 sera o valor de num3, basta apenas comparar
-						// Se o valor de num4 é maior, menor ou igual ao menor
-						if((num4 == menor) || (num4 > menor)) {
-							meio = num4;
-							meio2 = num3;
-						} 
-						else 
-							if(num4 < menor) {
-								meio = menor;
-								menor = num4;
-								meio2 = num3;
-							}
-					}
-
-					if((num4 > num3) && (num4 < maior)) { // Sendo num4 maior que o num3, porem menor que o atual maior
-						// Nesse ponto, ja se sabe que o maior sera mantido, e meio2 sera o valor de num3, basta apenas comparar
-						// Se o valor de num3 é maior, menor ou igual ao menor
-						if((num3 == menor) || (num3 > menor)) {
-							meio = num3;
+					else
+						if(num4 == maior) { // Se num4 e igual ao maior
 							meio2 = num4;
-						} 
-						else 
-							if(num3 < menor) {
-								meio = menor;
-								menor = num3;
+						}
+						else { // Se o num4 e menor que o atual maior numero, agora ele sera comparado ao valor do meio
+							if(num4 >= meio) { // Se num4 for maior ou igual ao valor do meio, ele pode assumir a mesma posicao
 								meio2 = num4;
 							}
-					}
-
-					if((num3 < num4) && (num3 < menor)) { // Se num3 e menor que todos...
-						// Agora e necessario verificar a relacao do num4 com o maior
-						if(num4 <= maior) {
-							meio2 = num4;
-							meio = menor;
-							menor = num3;
-						}
-						else { // Se o num4 for maior que o atual maior
-							meio2 = maior;
-							maior = num4;
-							meio = menor;
-							menor = num3;
-						}
-					}
-					else 
-						if((num3 < num4) && (num3 > menor)) { // Se num3 e menor que num4, porem maior que o atual menor
-
+							else
+								if(num4 < meio) { // Se num4 for menor que o valor do meio
+									//Se num4 for menor, precisa validar se ele e menor que tudo, ou menor apenas que o valor meio
+									if(num4 < menor) {
+										meio2 = meio;
+										meio = menor;
+										menor = num4;
+									}
+									else
+										if(num4 >= menor) {
+											meio2 = meio;
+										meio = num4;
+										}	
+								}
 						}
 
 					// Exibir os resultados
