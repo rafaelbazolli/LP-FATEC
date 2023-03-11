@@ -11,7 +11,7 @@ main(){
 	printf("Digite sua idade: \n"); // Imprime texto para o usuario
 	scanf("%f", &idade); // Recebe o valor da idade digitada pelo usuario
 	
-	meses = idade / 12; // Execucao do calculo dos meses
+	meses = idade * 12; // Execucao do calculo dos meses
 	semanas = meses * 4; // Execucao do calculo dos semanas
 	dias = semanas * 7; // Execucao do calculo dos dias
 	horas = dias * 24; // Execucao do calculo dos horas
