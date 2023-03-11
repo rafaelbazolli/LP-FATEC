@@ -1,23 +1,24 @@
-#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
+#include<stdio.h> // Responsavel pelos comandos printf e scanf
+#include<conio.h> // Responsavel pelo comando getch
+#include<windows.h> // Responsavel pelo comando system
 
 main(){
-	/* Uma fábrica de brinquedos no Japão inventou uma nova forma de produzir bambolês. O cliente escolhe o raio do
-bambolê e a fábrica produz o bambolê sob medida para o cliente. Crie um programa para ajudar o fabricante a calcular o perímetro do bambolê baseado
+	/* Uma fabrica de brinquedos no Japao inventou uma nova forma de produzir bamboles. O cliente escolhe o raio do
+bambole e a fabrica produz o bambole sob medida para o cliente. Crie um programa para ajudar o fabricante a calcular o perimetro do bambolï¿½ baseado
 na medida do raio escolhida pelo cliente. */
 
-	system("cls");
+	system("cls"); // Limpa a tela do prompt 
 	
-	float raio, perimetro, area;
+	float raio, perimetro, area; // Declaracao das variaveis do tipo real(ponto flutuante)
 	
-	printf("Calculadora de perímetro do bambole\n");
-	printf("Digite o valor do raio do bambole: \n");
-	scanf("%f", &raio);
+	printf("Calculadora de perimetro do bambole\n"); // Imprime o texto para o usuario
+	printf("Digite o valor do raio do bambole: \n"); // Imprime o texto para o usuario
+	scanf("%f", &raio);  // Recebe o valor do raio fornecido pelo usuario
 	
-	perimetro = 2 * 3.14 * raio;
+	perimetro = 2 * 3.14 * raio; // Calcula o perimetro do bambole
 	
 	printf("Raio do bambole: %.2f \nPerimetro necessario: %.2f", raio, perimetro);
+	//  Acima, e exibida a mensagem para o usuario contendo o raio digitado, e o perimetro do bambole ja calculado
 		
-	getch();
+	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }

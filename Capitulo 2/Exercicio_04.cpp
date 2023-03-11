@@ -1,9 +1,9 @@
-#include<stdio.h> // Responsável pelos comandos printf e scanf
-#include<conio.h> // Responsável pelo comando getch
-#include<windows.h> // Responsável pelo comando system
+#include<stdio.h> // Responsavel pelos comandos printf e scanf
+#include<conio.h> // Responsavel pelo comando getch
+#include<windows.h> // Responsavel pelo comando system
 
 main(){
-	/* Criar um programa em linguagem C que fa�a a convers�o de m em km hm, dam, dc, dm e mm*/
+	/* Criar um programa em linguagem C que faca a conversao de m em km hm, dam, dc, dm e mm*/
 	system("cls"); // Limpa a tela do prompt 
 	
 	float metros, km, hm, dam, dc, cm, mm; // Declaracao das variaveis do tipo real(ponto flutuante)

@@ -1,5 +1,5 @@
-#include<stdio.h> // Responsável pelos comandos printf e scanf
-#include<conio.h>  // Responsável pelo comando getch
+#include<stdio.h> // Responsavel pelos comandos printf e scanf
+#include<conio.h>  // Responsavel pelo comando getch
 
 main(){
 	/*Criar um programa em linguagem C que efetue a soma de dois numeros dos tipo real*/
