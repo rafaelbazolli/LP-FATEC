@@ -1,15 +1,16 @@
+/*
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
 #include<time.h>
 
 main(){
-	/* PROGRAMA para jogar 21
+	/ PROGRAMA para jogar 21
 	1) Os números não podem ser iguais entre eles.
 	2) Os números a serem sorteados são de 01 a 10.
 	3) Nenhum dos números podem ser 0.
 	4) Responder: Quem ganhou ?
-	5) Por que ganhou ? */
+	5) Por que ganhou ? /
 
 	// v1 ao v6 sao os valores aleatorios para voce, p1 ao p6 sao os valores para o PC. x1 ao x4 sao os valores iniciais obriatorios
 	int outroNumero, voce = 0, pc = 0, x1, x2, x3, x4, v1, v2, v3, v4, v5, v6, p1, p2, p3, p4, p5, p6;
@@ -92,3 +93,4 @@ main(){
 
 	getch();
 }
+*/
