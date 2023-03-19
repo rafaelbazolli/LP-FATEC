@@ -3,41 +3,26 @@
 #include<conio.h>
 
 main(){
-	/* Criar um programa em linguagem C que leia um numero positivo do teclado e informar se ele e divisivel 
-	por 10, por 5, por 2 ou se nao e divisivel por nenhum deles. */
+	/* Criar um programa em linguagem C que leia dois números inteiros e somá-los. Se a soma for maior que 10, mostrar o
+	resultado. Senão exibir a mensagem que não é possível exibir o número. */
 	
-	bool por2, por5, por10;
-	int num;
+	int num1, num2, resultado; // Declarando as variaveis do tipo inteiro
 	
-	printf("Programa para verificar se o numero e divisivel por 2, 5 ou 10");
-	printf("\nDigite um numero: ");
-	scanf("%d", &num);
+	printf("Programa que soma dois numeros intieros!\n\n"); // Imprime a mensagem na tela
+	printf("Digite um numero: "); // Imprime a mensagem na tela
+	scanf("%i", &num1);  // Recebe o valor do numero digitado pelo usuario
+	printf("Digite outro numero: "); // Imprime a mensagem na tela
+	scanf("%i", &num2);  // Recebe o valor do numero digitado pelo usuario
 	
-	por2 = num % 2; // Retorna o resto 0 caso a divisao seja bem sucedida
-	por5 = num % 5;
-	por10 = num % 10;
+	resultado = num1 + num2; // Efetua a soma e aramazena em 'resultado'
 	
-	if((por2 == 0) && (por5 == 0) && (por10 == 0)) { // Se for divisivel por todos
-		printf("\n\nO numero e divisivel por 2, 5 e 10.");
+	if(resultado > 10) {
+		printf("\n%i + %i = %i", num1, num2, resultado);
+		// O comando acima imprime na tela os numeros digitados, e a soma deles
 	}
-	else
-		if((por2 == 0) && (por5 == 0) && (por10 == 1)) { // Se nao for divisivel apenas pelo 10
-			printf("\n\nO numero e divisivel por 2 e 5.");
-		}
-		else 
-			/* Somente divisivel por 2 e 10, ou por 5 e 10 sao desnecessarios, pois se for divisivel por 10
-			   obrigatoriametne ele sera por 2 tambem. Da mesma forma, se for divisivel por 10, por 2 ele tambem sera */
-			if((por2 == 1) && (por5 == 1) && (por10 == 1)) {
-				printf("\n\nO numero nao e divisivel por 2, por 5 nem por 10.");
-			}
-			else // Aqui serao tratados os que somente sao divisiveis por um unico numero
-				if(por2 == 0) {
-					printf("\n\nO numero e divisivel somente por 2.");
-				}
-				else
-					if(por5 == 0) {
-						printf("\n\nO numero e divisivel somente por 5.");
-					} 
-					// Somente divisivel por 10 nao pode ser colocado, pois ele obrigatoriamente seria divisivel por 2 e por 5
-	getch();
+	else {
+		printf("\nNao foi possivel exibir o numero! Os criterios nao foram atingidos."); // Imprime a mensagem na tela
+	}
+	
+	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }

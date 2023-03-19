@@ -1,25 +1,24 @@
-#include<stdio.h>
-#include<windows.h>
-#include<conio.h>
+#include<stdio.h> // Responsavel pelos comandos printf e scanf
+#include<conio.h> // Responsavel pelo comando getch
+#include<windows.h> // Responsavel pelo comando system
 
 main(){
 	/*Criar um programa em linguagem C que leia um número do usuário, se for maior que 20 imprimir a metade desse numero.*/
 	
-	float num, metade;
+	float num, metade;  // Declara as variaveis do tipo real(ponto flutuante)
 	
-	printf("\nDigite o primeiro numero: ");
-	scanf("%f", &num);
+	printf("\nDigite o primeiro numero: ");  // Imprime a mensagem na tela
+	scanf("%f", &num);  // Recebe o valor digitado pelo usuario
 	
-	metade = num / 2;
+	metade = num / 2; // Calcula a metade do valor
 	
-	if(num < 20) {
-		printf("\n\nImpossivel exibir a metade do numero. O criterio nao foi atingido.");
+	if(num < 20) {  // Se o numero for menor que 20, executa o bloco abaixo
+		printf("\n\nImpossivel exibir a metade do numero. O criterio nao foi atingido."); // Imprime a mensagem na tela
 	}		
-	else {
-		printf("\n\nA metade de %.2f e %.2f.", num, metade);
+	else {  // Se o numero digitado foi maior ou igual a 20, executa o bloco abaixo
+		printf("\n\nA metade de %.2f e %.2f.", num, metade); // Imprime a mensagem na tela, mostrando o numero e sua metade
 	}
 		
-	
-	getch();
+	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }
 

@@ -81,8 +81,8 @@ main() {
 					scanf("%f", &num3);
 
 					if(num3 > maior) {
-					meio = maior;
-					maior = num3;
+						meio = maior;
+						maior = num3;
 					} 
 					else
 						if(num3 < menor) {
