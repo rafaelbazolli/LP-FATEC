@@ -4,7 +4,7 @@
 
 main(){
 	/* Criar um programa em linguagem C que ajude Luiz na aula de geometria, sabendo que tenha que obter 3 numeros e imprimir se eles podem
-		ou n�o ser lados de um triangulo. A condicao para isto e: A<B+C e B<A+C e C<A+B.*/
+		ou nao ser lados de um triangulo. A condicao para isto e: A<B+C e B<A+C e C<A+B.*/
 	
 	float ladoA, ladoB, ladoC; // Declarando as variaveis do tipo real(ponto flutuante)
 	
@@ -18,11 +18,12 @@ main(){
 	
 	// No if abaixo e dada uma condicao de existencia do triangulo, um lado nao pode ser maior que a soma dos outros dois lados
 	if((ladoA < (ladoB + ladoC)) && (ladoB < (ladoA + ladoC)) && (ladoC < (ladoA + ladoB))) {
-		printf("\n\nOs lados informados podem formar um triangulo."); // Imprime a mensagem na tela
+		printf("\n\nOs numeros informados podem formar lados de um triangulo."); // Imprime a mensagem na tela
 	}	
 	else {
-		printf("\nOs lados informados NAO podem formar um triangulo."); // Imprime a mensagem na tela
+		printf("\nOs numeros informados NAO podem formar lados de triangulo."); // Imprime a mensagem na tela
 	}
 	
 	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }
+

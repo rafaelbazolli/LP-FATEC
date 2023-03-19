@@ -7,7 +7,7 @@ main(){
 	
 	float num, metade;  // Declara as variaveis do tipo real(ponto flutuante)
 	
-	printf("\nDigite o primeiro numero: ");  // Imprime a mensagem na tela
+	printf("\nDigite o numero: ");  // Imprime a mensagem na tela
 	scanf("%f", &num);  // Recebe o valor digitado pelo usuario
 	
 	metade = num / 2; // Calcula a metade do valor

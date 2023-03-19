@@ -9,7 +9,7 @@ main() {
 	float num1, num2, num3, num4, maior, meio, meio2, menor; // Declarando as variaveis do tipo real(ponto flutuante)
 	/* A sequencia no decorrer do programa sera: menor meio meio2 maior */
 
-	printf("Programa para ordenar 3 valores\n");  // Imprime a mensagem para o usuario
+	printf("Programa para ordenar 4 valores\n");  // Imprime a mensagem para o usuario
 	printf("\nDigite o primeiro numero: "); // Imprime a mensagem para o usuario
 	scanf("%f", &num1);  // Recebe o valor do primeiro numero 
 

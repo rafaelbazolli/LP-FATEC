@@ -23,7 +23,7 @@ main(){
 	if(delta < 0) {  // Se delta for negativo, executa o bloco abaixo
 		printf("Delta invalido! Tente outros numeros.");  // Imprime a mensagem na tela
 		Sleep(1500);  // Aguarda 1.5 segundos ate seguir para o proximo comando
-		goto menu;  // Aponta para o menu:, na linha 12. A execucao volta para solicitar novamenta os valores de A, B e C
+		goto menu;  // Aponta para o menu:, na linha 12. A execucao volta para solicitar novamente os valores de A, B e C
 	}
 	
 	x1 = (-b +sqrt(delta))/(2 * a);  // Calcula a raiz x1

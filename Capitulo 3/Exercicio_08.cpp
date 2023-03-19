@@ -27,7 +27,7 @@ main(){
 		}
 		else 
 			/* Somente divisivel por 2 e 10, ou por 5 e 10 sao desnecessarios, pois se for divisivel por 10
-			   obrigatoriametne ele sera por 2 tambem. Da mesma forma, se for divisivel por 10, por 2 ele tambem sera */
+			   obrigatoriamente ele sera por 2 tambem. Da mesma forma, se for divisivel por 10, por 2 ele tambem sera */
 			if((por2 == 1) && (por5 == 1) && (por10 == 1)) {
 				printf("\n\nO numero nao e divisivel por 2, por 5 nem por 10."); // Imprime a mensagem na tela
 			}

@@ -3,7 +3,7 @@
 #include<windows.h> // Responsavel pelos comandos system e Sleep
 
 main() {
-	/* Criar um programa (CALCULADORA ) em linguagem C que calcule as quatro opera��es b�sicas ( + ,- , / e * ). */
+	/* Criar um programa (CALCULADORA ) em linguagem C que calcule as quatro operacoes basicas ( + ,- , / e * ). */
 	int opcao, retornoMenu;  // Declarando as variaveis do tipo inteiro
 	float num1, num2, resultado;  // Declarando as variaveis do tipo real(ponto flutuante)
 	

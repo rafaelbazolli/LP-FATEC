@@ -6,7 +6,7 @@ main() {
 	/* Criar tres programas em linguagem C que identifique e que ordene 2, 3 e 4 numeros em ordem decrescente. */
 	/* Esse programa ordena somente dois numeros */
 
-	float num1, num2, maior, menor;
+	float num1, num2, maior, menor; // Declarando as variaveis do tipo real(ponto flutuante)
 
 	printf("Programa para ordenar 2 valores\n");  // Imprime a mensagem para o usuario
 	printf("\nDigite o primeiro numero: "); // Imprime a mensagem para o usuario

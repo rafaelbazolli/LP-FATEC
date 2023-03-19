@@ -3,6 +3,7 @@
 #include<windows.h> // Responsavel pelo comando system
 
 main() {
+	/* Criar um programa em linguagem C que identifique se o numero é PAR ou IMPAR. */
 	
 	int num;  // Declaracao de variavel do tipo inteiro
 	
@@ -20,3 +21,4 @@ main() {
 	
 	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }
+
