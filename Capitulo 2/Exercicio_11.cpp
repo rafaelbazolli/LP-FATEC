@@ -1,29 +1,26 @@
 #include<stdio.h> // Responsavel pelos comandos printf e scanf
-#include<conio.h> // Responsavel pelo comando getch
-#include<windows.h> // Responsavel pelo comando system
+#include<windows.h> // Responsavel pelo comando system 
 
-main(){
-	/* Criar um programa em linguagem C programa que Calcule o consumo de um veiculo conforme os dados 
-	informado no teclado: Tempo em horas e a distancia */
+main() {
 
-	system("cls"); // Limpa a tela do prompt 
+	system("cls");  // Limpa a tela do prompt 
 	
-	float tempo, velocidade, distancia, consumo = 10; // Declaracao das variaveis do tipo real(ponto flutuante)
+	float horas, velmedia, medcons, dist, consumoFinal;
 	
-	printf("Calculadora de consumo medio de veiculo\n");
-	printf("Digite o tempo do trajeto(horas): \n");
-	scanf("%f", &tempo);
-	printf("Digite a velocidade media(km/h): \n");
-	scanf("%f", &velocidade);
-	printf("Digite a distancia percorrida(km): \n");
-	scanf("%f", &distancia);
+	printf("Programa consumo de combustivel!\n\n"); // Imprime o texto para o usuario
+	printf("Digite a quantidade de horas: \n");  // Imprime o texto para o usuario
+	scanf("%f",&horas);  // Recebe a quantidade de horas
+	printf("Digite a velocidade media: \n");  // Imprime o texto para o usuario
+	scanf("%f", &velmedia);  // Recebe a velocidade media 
+	printf("Digite a media cosnumo: \n");  // Imprime o texto para o usuario
+	scanf("%f", &medcons);  // Recebe o valor da media de consumo 
 	
-	/* Se ja vai ser dada a distancia, e estamos supondo o gasto medio do veiculo, velocidade media e tempo sao irrelevantes para o calculo */
-	/* Considerando nesse caso um veiculo que faz 10Km/L */
-	consumo = distancia / consumo;	
-	
-	printf("O consumo aproximado do trajeto foi de %.2f litros de combustivel.", consumo);
-	// Acima e exibida uma mensagem com o consumo aproximado de combustivel do veiculo no trajeto
+	dist = velmedia * horas;  // Calcula a distancia percorrida pelo veiculo
+	consumoFinal = dist / medcons;  // Calcula o consumo final de combustivel
 
-	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
+	printf("O consumo medio de combustivel em KM por Litro: %.2f\n", consumoFinal); // Exibe para o usuario a mensagem contendo o consumo final calculado
+	
+	system("pause"); // Aguarda o usuario pressionar Enter para encerrar a execucao do programa
+
 }
+
