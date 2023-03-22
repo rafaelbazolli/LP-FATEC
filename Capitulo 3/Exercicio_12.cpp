@@ -29,50 +29,46 @@ main() {
 			goto validarVencedor;
 		} else {
 			printf("\nVC = %d + %d = %d", vc1, vc2, somaVC);
-			printf("\nPC = X + X = X", pc1, pc2, somaPC);
+			printf("\nPC = X + X = X");
 		}
 	} else if (sorteioAtual == 2) {
-		if(finalizando == true) {
+		if((finalizando == true) || (fim == true)) {
 			printf("\nVC = %d + %d + %d = %d", vc1, vc2, vc3, somaVC);
 			printf("\nPC = %d + %d + %d = %d", pc1, pc2, pc3, somaPC);
 
-			goto validarVencedor;
-		}
-		if(fim == true) { 
-			printf("\nVC = %d + %d + %d = %d", vc1, vc2, vc3, somaVC);
-			printf("\nPC = %d + %d + %d = %d", pc1, pc2, pc3, somaPC);
-			
-			goto validarQuemEstourou;
+			if(finalizando == true) {
+				goto validarVencedor;
+			} else if(fim == true) {
+				goto validarQuemEstourou;
+			}
 		} else {
 			printf("\nVC = %d + %d + %d = %d", vc1, vc2, vc3, somaVC);
-			printf("\nPC = X + X + X = X", pc1, pc2, pc3, somaPC);
+			printf("\nPC = X + X + X = X");
 		}		
 	} else if(sorteioAtual == 3) {
-		if(finalizando == true) {
+		if((finalizando == true) || (fim == true)) {
 			printf("\nVC = %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, somaVC);
 			printf("\nPC = %d + %d + %d + %d = %d", pc1, pc2, pc3, pc4, somaPC);
 
-			goto validarVencedor;
-		}
-		if(fim == true) { 
-			printf("\nVC = %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, somaVC);
-			printf("\nPC = %d + %d + %d + %d = %d", pc1, pc2, pc3, pc4, somaPC);
-			goto validarQuemEstourou;
+			if(finalizando == true) {
+				goto validarVencedor;
+			} else if(fim == true) {
+				goto validarQuemEstourou;
+			}
 		} else {
 			printf("\nVC = %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, somaVC);
 			printf("\nPC = X + X + X + X = X");
 		}
 	} else if(sorteioAtual == 4) {
-		if(finalizando == true) {
-			printf("\nVC = %d + %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, vc5, somaVC);
-			printf("\nPC = %d + %d + %d + %d + %d = %d", pc1, pc2, pc3, pc4, pc5, somaPC);
+		if((finalizando == true) || (fim == true)) {
+			printf("\nVC = %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, somaVC);
+			printf("\nPC = %d + %d + %d + %d = %d", pc1, pc2, pc3, pc4, somaPC);
 
-			goto validarVencedor;
-		}
-		if(fim == true) { 
-			printf("\nVC = %d + %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, vc5, somaVC);
-			printf("\nPC = %d + %d + %d + %d + %d = %d", pc1, pc2, pc3, pc4, pc5, somaPC);
-			goto validarQuemEstourou;
+			if(finalizando == true) {
+				goto validarVencedor;
+			} else if(fim == true) {
+				goto validarQuemEstourou;
+			}
 		} else {
 			printf("\nVC = %d + %d + %d + %d + %d = %d", vc1, vc2, vc3, vc4, vc5, somaVC);
 			printf("\nPC = X + X + X + X + X = X");
@@ -91,14 +87,9 @@ main() {
 			somaVC = somaVC + vc3;
 			somaPC = somaPC + pc3;
 
-			if(((somaVC > 21) || (somaPC > 21))) {
+			if((((somaVC > 21) && (somaPC > 21))) || (somaPC > 21) || (somaVC > 21)) {  // Se alguma soma ultrapassou 21, 'fim' e alterada para true
 				fim = true;
-				goto menu;
-			} else if((somaVC > 21) && (somaPC > 21)) {
-				fim = true;
-				goto menu;
 			}
-
 			goto menu;
 
 		} else if(sorteioAtual == 2) {
@@ -108,14 +99,9 @@ main() {
 			somaVC = somaVC + vc4;
 			somaPC = somaPC + pc4;
 
-			if(((somaVC > 21) || (somaPC > 21))) {
+			if((((somaVC > 21) && (somaPC > 21))) || (somaPC > 21) || (somaVC > 21)) {
 				fim = true;
-				goto menu;
-			} else if((somaVC > 21) && (somaPC > 21)) {
-				fim = true;
-				goto menu;
 			}
-
 			goto menu;
 
 		} else if(sorteioAtual == 3) {
@@ -125,25 +111,19 @@ main() {
 			somaVC = somaVC + vc5;
 			somaPC = somaPC + pc5;
 
-			if(((somaVC > 21) || (somaPC > 21))) {
+			if((((somaVC > 21) && (somaPC > 21))) || (somaPC > 21) || (somaVC > 21)) {
 				fim = true;
-				goto menu;
-			} else if((somaVC > 21) && (somaPC > 21)) {
-				fim = true;
-				goto menu;
 			}
-
 			goto menu;
-			
 		}
-	} else if (opcaoSortearNovamente == 2) {
+	} else if (opcaoSortearNovamente == 2) {   // Se o usuario nao quer mais sortear outro numero, variavel booleana 'finalizando' e alterada
 		finalizando = true;
 		goto menu;
-	} else {
+	} else {   // Se o usuario digitar uma opcao diferente de 1 ou 2 na linha 80, entra no bloco e retorna para pedir a opcao novamente
 		goto menuSortearNovamente;
 	}
 
-	validarVencedor:
+	validarVencedor:  // So vem pra esse trecho se nenhuma soma passou de 21, e o encerramento veio por acao do usuario digitando opcao 2
 	if(somaVC > somaPC) {
 		printf("\nVoce GANHOU!!! Sua pontuacao foi maior que a do PC!");
 		goto fim;
@@ -155,7 +135,7 @@ main() {
 		goto fim;
 	}
 
-	validarQuemEstourou:
+	validarQuemEstourou:  // So vem para esse trecho se alguma das duas somas, a do jogador ou do PC, for maior que 21
 	if((somaPC > 21) && (somaVC > 21)) {
 		printf("\nAmbos PERDERAM!!! A sua pontuacao e a do PC ultrapassaram 21!");
 		goto fim;
@@ -166,7 +146,6 @@ main() {
 		printf("\nVoce PERDEU!!! Sua pontuacao ultrapassou 21!");
 		goto fim;
 	}
-
 	fim:
 	getch();
 }
