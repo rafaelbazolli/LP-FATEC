@@ -17,12 +17,25 @@ main(){
 	srand(time(NULL));  // Gera uma semente aleatoria, a partir da qual o comando rand() pode gerar novos numeros a cada execucao do programa
 	
 	// O comando abaixo gera um numero aleatorio entre 0 e 59 usando a funcao rand, e soma 1 ao resultado. Assim nunca sera sorteado 0
+	sortear:
 	num1 = (rand() % 60) + 1;  
 	num2 = (rand() % 60) + 1;
 	num3 = (rand() % 60) + 1;
 	num4 = (rand() % 60) + 1;
 	num5 = (rand() % 60) + 1;
 	num6 = (rand() % 60) + 1;
+
+	if((num1 == num2) || (num1 == num3) || (num1 == num4) || (num1 == num5) || (num1 == num6)) {
+		goto sortear;
+	} else if((num2 == num3) || (num2 == num4) || (num2 == num5) || (num2 == num6)) {
+		goto sortear;
+	} else if((num3 == num4) || (num3 == num5) || (num3 == num6)) {
+		goto sortear;
+	} else if((num4 == num5) || (num4 == num6)) {
+		goto sortear;
+	} else if((num5 == num6)) {
+		goto sortear;
+	}
 
 	printf("E os numeros sorteados foram:\n%i %i %i %i %i %i", num1, num2, num3, num4, num5, num6);
 	// O comando acima imprime para o usuario os 6 numeros na ordem em que foram sorteados
