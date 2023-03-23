@@ -3,7 +3,7 @@
 #include<windows.h> // Responsavel pelo comando system
 
 main() {
-	/* Criar um programa em linguagem C que imprima o alfabeto de A a Z com o intervalo de 0,5 segundos. */
+	/* Criar um programa em linguagem C que imprima o alfabeto de Z a A com o intervalo de 0,5 segundos. */
 	
 	printf("Programa que exibe o alfabeto de Z a A \n\n");
 	
