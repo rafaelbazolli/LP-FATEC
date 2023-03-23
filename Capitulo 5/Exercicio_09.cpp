@@ -1,14 +1,13 @@
-#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
+#include<stdio.h> // Responsavel pelo comando printf e scanf
+#include<windows.h> // Responsavel pelos comandos System e Sleep
 
 main() {
-	/* Criar em linguagem C e utilizando o comando SWITCH, um programa que identifique se um número é PAR ou IMPAR e 0 para sair.*/
+	/* Criar em linguagem C e utilizando o comando SWITCH, um programa que identifique se um numero e PAR ou IMPAR e 0 para sair.*/
 	
 	int num, aux; // Declaracao da variavel do tipo inteiro
 	
-	while(true) {
-		system("cls");
+	while(true) {  // Laco infinito
+		system("cls");  // Limpa a tela do prompt
 		printf("Programa PAR ou IMPAR\n\n"); // Imprime o texto na tela
 		printf("Digite um numero: "); // Imprime o texto na tela
 		scanf("%d", &num);  // Recebe um valor do usuario
@@ -38,4 +37,3 @@ main() {
 		// Como o laco WHILE e infinito, vai retornar agora para a linha 10, e repetir todo o trecho de codigo
 	}
 }
-

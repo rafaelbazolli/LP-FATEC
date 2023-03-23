@@ -1,6 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
+#include<stdio.h> // Responsavel pelo comando printf e scanf
+#include<conio.h> // Responsavel pelo comando getch
 
 main() {
 	/* Criar em linguagem C e utilizando o comando DO WHILE, um programa que imprima uma contagem regressiva do numero que voce digitar.*/
@@ -13,11 +12,10 @@ main() {
 	
 	i = num; // 'i' recebe o mesmo valor de 'num', para que possa ser manipulado sem perdermos o valor dado pelo usuario(num)
 	
-	do { 
+	do {
 		printf("%d\n", i); // Imprime na tela o valor de 'i'
 		i--; 
-	} while(i >= 0); // 'i' comecou sendo igual ao numero digitado pelo usuario. Vai ser diminuido ate atingir 0, so entao saira do laço
+	} while(i >= 0); // 'i' comecou sendo igual ao numero digitado pelo usuario. Vai ser diminuido ate atingir 0, so entao saira do laï¿½o
     	
-	getch(); // Aguarda o usuario digitar alguma tecla, e so entao encerra o programa
+	getch(); // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }
-

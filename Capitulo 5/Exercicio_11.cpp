@@ -1,6 +1,4 @@
-#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
+#include<stdio.h> // Responsavel pelo comando printf
 
 main() {
 	/* Criar em linguagem C e utilizando o comando WHILE e / ou DO WHILE aninhado, um programa conforme imagem abaixo.*/
