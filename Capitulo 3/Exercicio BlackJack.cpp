@@ -5,7 +5,7 @@
 
 main() {
 	int vc1, vc2, vc3, vc4, vc5, pc1, pc2, pc3, pc4, pc5, somaVC = 0, somaPC = 0, opcaoSortearNovamente, sorteioAtual = 0;
-	bool fim = false, finalizando = false;  // booleano pra encerrar o programa por estourar pontuacao, ou por pedido do usuario
+	bool fim = false, finalizando = false;
 
 	srand(time(NULL));  // Semente random
 
