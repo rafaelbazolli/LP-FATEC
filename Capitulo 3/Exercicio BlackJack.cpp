@@ -16,7 +16,7 @@ main() {
 	pc2 = (rand() % 10) + 1;
 	somaVC = somaVC + vc1 + vc2;
 	somaPC = somaPC + pc1 + pc2;
-	sorteioAtual = 1;
+	sorteioAtual = 1; 
 
 	menu:
 	system("cls");
