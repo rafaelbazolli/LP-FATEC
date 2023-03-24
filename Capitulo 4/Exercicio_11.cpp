@@ -3,8 +3,8 @@
 #include<windows.h> // Responsavel pelo comando system
 
 main() {
-	/* Crie um programa em linguagem C, usando FOR. O programa deve receber um número inteiro, que será a quantidade de idades que deverão ser lidas. 
-	O programa deve também calcular a media das idades fornecidas e mostrá-la na tela. */
+	/* Crie um programa em linguagem C, usando FOR. O programa deve receber um numero inteiro, que sera a quantidade de idades que deverao ser lidas. 
+	O programa deve tambem calcular a media das idades fornecidas e mostra-la na tela. */
 	int repetir, idade;  // Declarando as variaveis do tipo inteiro
 	float mediaIdades, somaIdades = 0;  // Declarando as variaveis do tipo real(ponto flutuante)
 	
