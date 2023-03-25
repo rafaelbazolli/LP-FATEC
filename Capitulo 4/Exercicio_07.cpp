@@ -1,6 +1,6 @@
 #include<stdio.h> // Responsavel pelos comandos printf e scanf
 #include<conio.h> // Responsavel pelo comando getch
-#include<windows.h> // Responsavel pelo comando system
+#include<windows.h> // Responsavel pelo comando Sleep
 
 main() {
 	/* Criar um programa em linguagem C que imprima uma tabuada do 1 a 10 conforme entrada do usu�rio, 

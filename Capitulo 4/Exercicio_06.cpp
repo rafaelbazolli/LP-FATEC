@@ -1,6 +1,6 @@
-#include<stdio.h> // Responsavel pelos comandos printf e scanf
+#include<stdio.h> // Responsavel pelo comando printf
 #include<conio.h> // Responsavel pelo comando getch
-#include<windows.h> // Responsavel pelo comando system
+#include<windows.h> // Responsavel pelo comando Sleep
 
 main() {
 	/* Criar um programa em linguagem C que imprima a tabela ASCII utilizando o comando FOR. */

@@ -78,7 +78,7 @@ main() {
 		}
 		
 		menuRetorno:
-		printf("\n\nDeseja retornar ao menu? (1 - SIM || 2 - NAO)");   // Imprime a mensagem na tela
+		printf("\n\nDeseja retornar ao menu? (1 - SIM || 2 - NAO)\n");   // Imprime a mensagem na tela
 		scanf("%d", &opcaoRetornoMenu);  // Recebe a opcao do usuario de retornar ou nao para o menu
 		
 		if(opcaoRetornoMenu == 1) {  // Se o usuario optou por retornar ao menu, executa o bloco

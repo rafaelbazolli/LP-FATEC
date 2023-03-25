@@ -1,6 +1,6 @@
 #include<stdio.h> // Responsavel pelos comandos printf e scanf
 #include<conio.h> // Responsavel pelo comando getch
-#include<windows.h> // Responsavel pelo comando system
+
 
 main() {
 	/* Criar em programa em linguagem C, que efetue a SOMA da P.A. conforme imagem abaixo,utilizando FOR: */
