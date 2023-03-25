@@ -22,13 +22,13 @@ main() {
 				case 0:  // Caso 'aux' seja 0, e porque o numero e PAR
 				{
 					printf("\n\n%d e PAR!", num);  // Imprime o texto para o usuario
-					Sleep(1500);  // Pausa a execucao por 1.5 segundos, para dar tempo do usuario visualizar a mensagem
+					Sleep(2000);  // Pausa a execucao por 2 segundos, antes de executar o proximo comando
 					break;  // Comando break para encerrar a execucao do SWITCH
 				}
 				case 1:  // Caso 'aux' seja 1, e porque o numero e IMPAR
 				{
 					printf("\n\n%d e IMPAR!", num);  // Imprime o texto para o usuario
-					Sleep(1500);  // Pausa a execucao por 1.5 segundos, para dar tempo do usuario visualizar a mensagem
+					Sleep(2000);  // Pausa a execucao por 2 segundos, antes de executar o proximo comando
 					break; // Comando break para encerrar a execucao do SWITCH
 				}
 			}

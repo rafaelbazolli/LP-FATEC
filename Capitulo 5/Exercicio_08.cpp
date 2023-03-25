@@ -18,11 +18,11 @@ main() {
 		else {  // Caso o usuario digite algo diferente de zero, ele valida se o numero e par ou impar
 			if(num % 2 == 0) {  // Se o resto da divisao do num por 2 for zero, executa o bloco abaixo
 				printf("\n\n%d e PAR!", num);  // Imprime a mensagem na tela, e o numero digitado pelo usuario
-				Sleep(1500);  // Aguarda 1.5 segundos ate executar a proxima instrucao
+				Sleep(2000);  // Aguarda 2 segundos ate executar a proxima instrucao
 			} 
 			else {  // Se o resto da divisao nao foi zero, o resto entao so pode ser 1, e o numero e impar..
 				printf("\n\n%d e IMPAR!", num);  // Imprime a mensagem na tela, e o numero digitado pelo usuario
-				Sleep(1500);  // Aguarda 1.5 segundos ate executar a proxima instrucao
+				Sleep(2000);  // Aguarda 2 segundos ate executar a proxima instrucao
 			}
 		}
 		
@@ -30,3 +30,4 @@ main() {
 		// Aqui o while define a saida do programa, nao sendo necessario usar o break no lugar do continue
 	} while(num != 0); // 'i' comecou sendo igual ao numero digitado pelo usuario. Vai ser diminuido ate atingir 0, so entao saira do laco
 }
+

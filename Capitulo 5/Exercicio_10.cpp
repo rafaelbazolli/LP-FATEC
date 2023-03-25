@@ -3,8 +3,8 @@
 main() {
 	/* Criar em linguagem C e utilizando o comando WHILE e / ou DO WHILE aninhado, um programa conforme imagem abaixo. *\n**\n***\n...*/
 	
-	int linhas = 8, i = 1, j; // Declarando as variaveis do tipo inteiro que serao usadas como contador dentro do WHILE
-	// Foi definido o numero de linhas como 8, e 'i' = 1, j representara o contador de asteriscos para cada linha
+	int linhas = 8, i = 1, j; // Declarando as variaveis do tipo inteiro
+	// Foi definido o numero de linhas como 8, e 'i' = 1, o 'j' representara o contador de asteriscos para cada linha
     
     while (i <= linhas) {  // Enquanto i for menor ou igual oa numero de linhas, o laco sera mantido
     	
