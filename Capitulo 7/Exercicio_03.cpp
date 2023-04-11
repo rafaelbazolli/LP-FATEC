@@ -3,8 +3,8 @@
 #include<string.h> // Responsavel pelo comando strlen
 
 main() {
-	/* Solicitar um nome ao usuário e mostrar o primeiro, o último, o quarto, do primeiro ao terceiro, do segundo ao ultimo caractere do nome fornecido. 
-	Mostrar a posição de cada letra no vetor. */
+	/* Solicitar um nome ao usuario e mostrar o primeiro, o ultimo, o quarto, do primeiro ao terceiro, do segundo ao ultimo caractere do nome fornecido. 
+	Mostrar a posicao de cada letra no vetor. */
 	
 	int tamanho, i;  // Declarando as variaveis do tipo inteiro
 	char nome[50];  // Declarando a variavel do tipo char, a string de tamanho 50
