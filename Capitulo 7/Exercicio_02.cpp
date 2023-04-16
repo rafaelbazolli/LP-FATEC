@@ -2,7 +2,7 @@
 #include<conio.h>  // Responsavel pelo comando getch
 
 main() {
-	/* Preencher um vetor com os números pares do número 2 a 20. */
+	/* Preencher um vetor com os nï¿½meros pares do nï¿½mero 2 a 20. */
 	int vetor[10], i, j;  // Declarando as variaveis do tipo inteiro 
 
 	//  A variavel'j' serve para manter controle sobre o indice do vetor, pois as posicoes para armazenamento precisam ser sequenciais nesse caso
