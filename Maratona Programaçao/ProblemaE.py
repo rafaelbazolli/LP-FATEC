@@ -1,9 +1,10 @@
 num_classificados = 0; maior = 0
 pontuacao = []
 
-while(True):
-    competidores = int(input())
-    
+
+competidores = int(input())
+
+for i in range(0, competidores):
     if(competidores <= 0 or competidores >= 1000):
         continue
     else:
@@ -13,9 +14,9 @@ while(True):
             pass
         else:
             for i in range(1, competidores + 1):  ## Faz a leitura dos competidores
-               pontuacao_atual = int(input())
-               pontuacao.append(pontuacao_atual)
-               
+                pontuacao_atual = int(input())
+                pontuacao.append(pontuacao_atual)
+                
             pontuacao.sort(reverse=True)
             pontuacao_ordenado = pontuacao  ## Reverte a lista de pontuações para Decrescente
             
@@ -27,3 +28,4 @@ while(True):
                     classificados.append(aux)
             
             print(len(classificados)) 
+            break
