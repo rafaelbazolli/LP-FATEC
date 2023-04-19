@@ -51,6 +51,7 @@ for elemento in cores:
             aux2 =  elemento[2]      
         if(aux1 and aux2):
             novaExpressao = f'({aux1} + {aux2})'
+            if(aux1 == aux2): corDeSaida = aux1; break
             for elemento in cores:
                 if(elemento[0] == novaExpressao[1:4] and elemento[1] == novaExpressao[7:10]):
                     corDeSaida =  elemento[2]; break      
@@ -61,9 +62,11 @@ for elemento in cores:
             aux1 =  elemento[2]            
         if(aux1):
             novaExpressao = f'({aux1} + {expressao[15:18]})'
-            if(expressao[1:4] == expressao[7:10]): corDeSaida = expressao[1:4]
-            if(elemento[0] == novaExpressao[1:4] and elemento[1] == novaExpressao[7:10]):
-                corDeSaida =  elemento[2]; break        
+            if(novaExpressao[1:4] == novaExpressao[7:10]): corDeSaida = novaExpressao[1:4]; break
+            for elemento in cores:
+                if(novaExpressao[1:4] == novaExpressao[7:10]): corDeSaida = novaExpressao[1:4]; break
+                if(elemento[0] == novaExpressao[1:4] and elemento[1] == novaExpressao[7:10]):
+                    corDeSaida =  elemento[2]; break        
                         
     elif(tipoExpressao == 'tipo6'): ## Tipo 6
         if(expressao[9:12] == expressao[15:18]): corDeSaida = expressao[9:12]
@@ -72,8 +75,9 @@ for elemento in cores:
         if(aux1):
             novaExpressao = f'({expressao[1:4]} + {aux1})'
             if(expressao[1:4] == expressao[7:10]): corDeSaida = expressao[1:4]
-            if(elemento[0] == novaExpressao[1:4] and elemento[1] == novaExpressao[7:10]):
-                corDeSaida =  elemento[2]; break  
+            for elemento in cores: 
+                if(elemento[0] == novaExpressao[1:4] and elemento[1] == novaExpressao[7:10]):
+                    corDeSaida =  elemento[2]; break  
                                   
     if(elemento == cores[-1]):  # Se fez todas as iterações no vetor de cores e nenhuma foi valida
         corDeSaida = 'ESCOLHA VOCE MESMO'; break                   

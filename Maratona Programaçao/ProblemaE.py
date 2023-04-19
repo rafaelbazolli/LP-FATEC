@@ -4,12 +4,9 @@ pontuacao = []
 competidores = int(input())
 
 for i in range(0, competidores):
-    if(competidores <= 0 or competidores >= 1000):
-        continue
-    else:
         min_competidores = int(input())
         
-        if(min_competidores <= 1 or min_competidores >= competidores):
+        if(min_competidores < 1 or min_competidores > competidores):
             pass
         else:
             for i in range(1, competidores + 1):  ## Faz a leitura dos competidores
