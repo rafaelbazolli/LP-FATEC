@@ -6,7 +6,7 @@ def validarTipoExpressao(expressao):
     elif(len(expressao) == 19):
         if(expressao[4] == ')'): return 'tipo6'
         else: return 'tipo5'
-                  
+    ## (AMR + VML) + (AMR)              
 corDeSaida = ''
 aux1 = False
 aux2 = False    

@@ -1,7 +1,6 @@
 num_classificados = 0; maior = 0
 pontuacao = []
 
-
 competidores = int(input())
 
 for i in range(0, competidores):
