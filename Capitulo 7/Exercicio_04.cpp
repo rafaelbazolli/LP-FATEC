@@ -4,8 +4,8 @@
 
 
 main() {
-	/* Preencher um vetor com 8 numeros inteiros; solicitar um número do teclado. Pesquisar se esse número existe no vetor. 
-	Se existir, imprimir em qual posição do vetor e qual a ordem foi digitado. Se não existir, imprimir MSG que não existe. */
+	/* Preencher um vetor com 8 numeros inteiros; solicitar um nï¿½mero do teclado. Pesquisar se esse numero existe no vetor. 
+	Se existir, imprimir em qual posiï¿½ï¿½o do vetor e qual a ordem foi digitado. Se nao existir, imprimir MSG que nao existe. */
 	
 }
  
