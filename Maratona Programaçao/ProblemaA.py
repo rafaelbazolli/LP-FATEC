@@ -18,13 +18,9 @@ def converterHexa(numero):
     if(numero == '1111'): return 'F'
 
 codigoErro = str(input())
-tamanho = len(codigoErro)
 
-if(tamanho > 16 or tamanho < 16):
-    pass
-else:
-    parte1 = '0x' + converterHexa(codigoErro[:4]) + converterHexa(codigoErro[4:8])
-    parte2 = '0x' + converterHexa(codigoErro[8:12]) + converterHexa(codigoErro[12:])
-    codigoConvertido = parte1 + ' ' + parte2
-    print(codigoConvertido)
+parte1 = '0x' + converterHexa(codigoErro[:4]) + converterHexa(codigoErro[4:8])
+parte2 = '0x' + converterHexa(codigoErro[8:12]) + converterHexa(codigoErro[12:])
+codigoConvertido = parte1 + ' ' + parte2
+print(codigoConvertido)
     

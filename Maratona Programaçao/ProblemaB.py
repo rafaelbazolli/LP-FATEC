@@ -6,30 +6,41 @@ def validarTipoExpressao(expressao):
     elif(len(expressao) == 19):
         if(expressao[4] == ')'): return 'tipo6'
         else: return 'tipo5'
-    ## (AMR + VML) + (AMR)              
+                  
 corDeSaida = ''
 aux1 = False
 aux2 = False    
-cores = [['AMR', 'LAR', 'VML'],['LAR', 'AMR', 'VML'],
-         ['VML', 'AMR', 'LAR'],['AMR', 'VML', 'LAR'],
-         ['AZL', 'VML', 'RXO'],['VML', 'AZL', 'RXO'],
-         ['AMR', 'AZL', 'VRD'],['AZL', 'AMR', 'VRD'],
-         ['AMR', 'VRD', 'AZL'],['VRD', 'AMR', 'AZL'],
-         ['BRC', 'PRT', 'CNZ'],['PRT', 'BRC', 'CNZ'],
-         ['VML', 'BRC', 'RSA'],['BRC', 'VML', 'RSA'],
-         ['LAR', 'BRC', 'BJE'],['BRC', 'LAR', 'BJE'],
-         ['VML', 'VRD', 'MRN'],['VRD', 'VML', 'MRN'],
-         ['LAR', 'RXO', 'MRT'],['RXO', 'LAR', 'MRT'],
-         ['RXO', 'BRC', 'LLS'],['BRC', 'RXO', 'LLS']]
+cores = [['AMR', 'LAR', 'VML'],  
+         ['LAR', 'AMR', 'VML'],## elemento é cada linha de cores
+         ['VML', 'AMR', 'LAR'],## elemento é cada linha de cores
+         ['AMR', 'VML', 'LAR'],## elemento é cada linha de cores
+         ['AZL', 'VML', 'RXO'],
+         ['VML', 'AZL', 'RXO'],
+         ['AMR', 'AZL', 'VRD'],
+         ['AZL', 'AMR', 'VRD'],
+         ['AMR', 'VRD', 'AZL'],
+         ['VRD', 'AMR', 'AZL'],
+         ['BRC', 'PRT', 'CNZ'],
+         ['PRT', 'BRC', 'CNZ'],
+         ['VML', 'BRC', 'RSA'],
+         ['BRC', 'VML', 'RSA'],
+         ['LAR', 'BRC', 'BJE'],
+         ['BRC', 'LAR', 'BJE'],
+         ['VML', 'VRD', 'MRN'],
+         ['VRD', 'VML', 'MRN'],
+         ['LAR', 'RXO', 'MRT'],
+         ['RXO', 'LAR', 'MRT'],
+         ['RXO', 'BRC', 'LLS'],
+         ['BRC', 'RXO', 'LLS']]
               
-expressao = str(input())
-tipoExpressao = validarTipoExpressao(expressao)
+expressao = str(input())  ########  (AMR + VML) + (VML + AMR)     aux1    aux2
+tipoExpressao = validarTipoExpressao(expressao)  # 'tipo4'
 
-for elemento in cores:
+for elemento in cores:  # cores[0][0]
     if(tipoExpressao == 'tipo1'):  ## Tipo 1
         if(expressao[1:4] == elemento[2]): corDeSaida = expressao[1:4]; break  
         
-    elif(tipoExpressao == 'tipo2'): ## Tipo 2
+    elif(tipoExpressao == 'tipo2'): ## Tipo 2  (cor + cor)
         if(expressao[1:4] == expressao[7:10]): corDeSaida = expressao[1:4]; break  ## Validar se as duas cores tem o mesmo valor
         if(elemento[0] == expressao[1:4] and elemento[1] == expressao[7:10]):
             corDeSaida =  elemento[2]; break            
@@ -56,7 +67,7 @@ for elemento in cores:
                 if(elemento[0] == novaExpressao[1:4] and elemento[1] == novaExpressao[7:10]):
                     corDeSaida =  elemento[2]; break      
                                   
-    elif(tipoExpressao == 'tipo5'): ## Tipo 5
+    elif(tipoExpressao == 'tipo5'): ## Tipo 5    aux1 + (cor)
         if(expressao[1:4] == expressao[7:10]): corDeSaida = expressao[1:4]
         if(elemento[0] == expressao[1:4] and elemento[1] == expressao[7:10]):
             aux1 =  elemento[2]            

@@ -21,10 +21,7 @@ def modelo3(produtos, qtdVendida):  ## Média das compras
 
 
 produtos = []  ## Será um array multi, [[quantidade, valorUnitario, totalVenda], [quantidade2, valorUnitario2, totalVenda2]]...
-i = -1
-
 while(True):
-    i += 1
     entrada = str(input())
 
     if ' ' in entrada:  ## Se tiver espaço é porque o usuario inseriu produtos
@@ -56,6 +53,4 @@ while(True):
             saida = f'M2 ou M3 = R${M2}'
         elif(M1 < M3 and M1 == M2): 
             saida = f'M1 ou M2 = R${M2}'
-        else:
-            print('teste')
         print(saida); break
