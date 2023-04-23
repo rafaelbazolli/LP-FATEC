@@ -13,7 +13,7 @@ main() {
     printf("Digite uma palavra: ");  // Imprime a mensagem na tela
     scanf("%s", palavra);  // Recebe do usuario a palavra que sera exibida no loop
 
-    while(!kbhit()) // Loop infinito
+    while(!kbhit()) // Loop sera mantido enquanto uma tecla nao for pressionada
         printf("%s\n", palavra); // Imprime a palavra digitada pelo usuario	
 	getch();  // Aguarda o usuario digitar uma tecla qualquer para encerrar a execucao do programa
 }

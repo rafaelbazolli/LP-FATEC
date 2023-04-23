@@ -1,9 +1,9 @@
 #include<stdio.h>  // Responsavel pelos comandos printf e scanf
 
 main() {
-    /* Preencha um vetor com 10 numeros inteiros fornecidos pelo usuario(vetor1). Em seguida, com base no vetor recebido, deve ser gerado um novo vetor de 10 numeros inteiros, onde: 
-    - As cinco primeiras posicoes deverao ser preenchidas pelos numeros das posicoes pares do vetor1
-    - As cinco ultimas posicoes deverao ser preenchidas pelos numeros das posicoes impares do vetor1 */
+    /* Preencha um vetor com 10 números inteiros dados pelo usuário(vetor1). Em seguida, com base no vetor1, deve ser gerado um novo vetor de 10 números inteiros, onde: 
+    - As 5 primeiras posições deverão ser preenchidas pelos valores que estão nas posições pares do vetor1;
+    - As 5 ultimas posições deverão ser preenchidas pelos valores que estão nas posições impares do vetor1; */
 
     int vetor[10], novoVetor[10], i, j = 0, k = 1;   // Declarando as variaveis do tipo inteiro
 
