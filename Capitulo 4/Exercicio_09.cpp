@@ -1,7 +1,7 @@
 #include<stdio.h> // Responsavel pelos comandos printf e scanf
 #include<windows.h> // Responsavel pelo comando system
 
-decimalBinario() {  // Declarando a funcao que ira converter o numero decimal em binario
+void decimalBinario() {  // Declarando a funcao que ira converter o numero decimal em binario
 	int num, x1, x2, x3, x4, x5, x6, x7, x8;  // Declarando as variaveis do tipo inteiro
 	
 // Note que o comando goto possui escopo de funcao, ou seja, o goto da linha 15 aponta para menu, mas ele apontara para o 
@@ -29,7 +29,7 @@ decimalBinario() {  // Declarando a funcao que ira converter o numero decimal em
 	}	
 }
 
-binarioDecimal() {  // Declarando a funcao que ira converter o numero binario em decimal
+void binarioDecimal() {  // Declarando a funcao que ira converter o numero binario em decimal
 	int num, dec, x1, x2, x3, x4, x5, x6, x7, x8;  // Declarando  as variaveis do tipo inteiro
 	
 	menu:
