@@ -20,7 +20,7 @@ A computação em nuvem tem experimentado um crescimento significativo nos últi
 Os provedores de serviços em nuvem, como Amazon Web Services (AWS), Microsoft Azure e Google Cloud Platform(GCP), continuam a lançar novos recursos e serviços para atender às crescentes demandas dos clientes. Eles também estão investindo em segurança, privacidade e conformidade, a fim de manter a confiança dos usuários.
 
 
-## Tendencias para o Futuro
+## Tendencias para o Futuro(Lipe)
 
 ...
 
