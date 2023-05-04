@@ -13,10 +13,14 @@ inversa.
 
 6 - Faça um programa que lê uma matriz de 3x3 elementos usando um comando for, multiplica cada elemento por 5 e imprime o resultado.
 
-7 Faça um programa que lê uma matriz de 4x3 elementos usando um comando for, e crie uma outra matriz para receber a raiz quadrada dos elementos lidos na primeira matriz. Imprimir a nova matriz na tela. 
+7 - Faça um programa que lê uma matriz de 4x3 elementos usando um comando for, e crie uma outra matriz para receber a raiz quadrada dos elementos lidos na primeira matriz. Imprimir a nova matriz na tela. 
 
+8 - Crie um programa em C que leia 6 nomes, e depois mostre:
+    - Quantos dos nomes lidos começam com A e terminam com O;
+    - Quantos tem a letra 'O' e quantas letras 'O' foram encontradas ao total nos 6 nomes;
+    - Quantos dos nomes possuem a silaba 'EL' ao final. 
 
-
+9 - 
 
 10 - Faça um programa para ajudar uma pizzaria a registrar e analisar alguns pedidos. O programa deve ler 12 pedidos, de acordo com os seguintes requisitos: 
     - O numero do pedido não precisa ser sequencial;
@@ -24,11 +28,7 @@ inversa.
     - Se o valor total do pedido passou de R$ 200,00, ele deve receber um desconto de 10% no valor total antes de ser armazenado;
     - Ao final, imprimir na tela todos os pedidos lidos, porém, em ordem crescente ordenados pelo numero do pedido;
     
-
-
-
 11 - Faça um programa que lê uma duas matrizes de 3x3 e um determinante para multiplicar esta matriz.
-
 
 12 - Faça um programa que leia uma matriz 4 x 4 de numeros inteiros. Em seguida, baseado nessa matriz lida, gere e imprima uma nova matriz 4 x 4 seguindo as seguintes regras: 
     - Os elementos da primeira linha devem ser colocados na ultima linha, e os da ultima linha devem ser colocados na primeira.
