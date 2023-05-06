@@ -1,5 +1,5 @@
 #include <stdio.h>  // Responsavel pelos comandos printf e scanf
-#include <string.h>  // Responsavel pelo comando gets
+#include <string.h>  // Responsavel pelos comandos gets e strlen
 
 int main() {
     int i, j, letrasO = 0, palavrasComO = 0, silabaEL = 0, comecaAterminaO = 0, tam, aux;
@@ -8,7 +8,7 @@ int main() {
     // Laco for para receber os 6 nomes
     for(i = 0; i < 6; i++) {
         fflush(stdin);
-        printf("Digite uma palavra: ");
+        printf("Digite um nome: ");
         gets(nomes[i]);
 
         aux = i;  // Referencia para quais palavras terao a letra 'o'. Ele sempre se iguala ao numero da linha a cada nova iteracao no array
