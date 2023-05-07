@@ -36,7 +36,12 @@ inversa.
     - Ao final, exibir todo o cardapio ja com as posições invertidas;
 
 
-12 - ...
+12 - Crie um programa em C para ajudar uma Organização a calcular os custos que tiveram nas premiações de uma competição de atletismo. O programa deve receber os 15 nomes dos países que foram representados na competição, seguidos do total de medalhas de ouro, prata e bronze que conseguiram. Seguem os demais requisitos: 
+    - Calcular o custo que tiveram com as medalhas dos competidores, sendo os valores: Ouro = R$ 110,00 | Prata = R$ 75,50 | Bronze = R$ 42,00;
+    - Exibir o custo total de cada tipo de medalha, e de todas juntas;
+    - Exibir qual foi o país vencedor da competição, baseado na quantidade de medalhas de ouro, prata e bronze. Considerar para o desempate, respectivamente: quem teve maior quantidade de medalhas de ouro, de prata, e de bronze.
+    - Caso haja empate na quantidade de todas as medalhas entre dois ou mais países, exibir somente um deles e desconsiderar os restantes.
+
 
 13 - Crie um programa em C que leia 4 numeros de CPF(contendo as pontuações) fornecidos pelo usuario. Após isso, validar:
     - Se o CPF digitado está dentro do padrão xxx.xxx.xxx-xx, onde 'x' representam os numeros;
@@ -62,8 +67,6 @@ inversa.
 
 **** AINDA NÃO ESTÃO FEITOS: ****
 
-
-12 - ...
   
 14 - Faça um programa que lê uma duas matrizes de 3x3 e um determinante para multiplicar esta matriz.
 
