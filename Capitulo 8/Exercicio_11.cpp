@@ -4,54 +4,57 @@
 
 
 int main() {
-    int i, j, codigoPedido[10], qtd, pedidoMaiorVenda, pedidoMenorVenda;
-    float  menorVenda, valor[10], mediaFaturamento, valorUnit, aux, maiorVenda = 0, faturamentoTotal = 0;
-    char pizza[10][30];
-    
-    // Laco for para realizar a leitura dos pedidos
-    for(i = 0; i < 10; i++) {
-        system("cls");
-        printf("Digite o numero do pedido: ");
-        scanf("%d", &codigoPedido[i]);
+    int i, j, posicaoMaisCaro, posicaoMaisBarato;
+    char pizza[10][30], maisCaro[30], maisBarato[30], auxPizza[30];
+    float valores[10], aux = 0, valorMaisCaro = 0, valorMaisBarato;
+
+    // Laco for para receber os valores
+    for(i = 0; i < 5; i++) {
         fflush(stdin);
         printf("Digite o sabor da pizza: ");
         gets(pizza[i]);
-        printf("Quantas pizzas foram vendidas nesse pedido: ");
-        scanf("%d", &qtd);
-        printf("Digite o valor unitario da pizza: ");
-        scanf("%f", &valorUnit);
+        printf("Digite o valor da pizza(R$): ");
+        scanf("%f", &valores[i]);
 
-        aux = (qtd * valorUnit);  // Calculando o valor total e armazenando em aux
-        valor[i] = (aux > 200) ? (aux * 0.9) : aux;  // Validando se o valor passou de 200, e aplicando o desconto de 10% 
-        faturamentoTotal += valor[i];    // Acumulador para o valor total do faturamento no dia
-
-        
-        // Validando se a venda atual e maior que a atual maior
-        if(valor[i] > maiorVenda) {
-            maiorVenda = valor[i];
-            pedidoMaiorVenda = codigoPedido[i];
+        // Validando se o valor recebido e o mais caro ate o momento
+        if(valores[i] > valorMaisCaro) {
+            valorMaisCaro = valores[i];
+            strcpy(maisCaro, pizza[i]);
+            posicaoMaisCaro = i; 
         }
 
-        // Validando se a venda atual e menor que a atual menor
-        if(i = 0)
-            menorVenda = valor[i];
-        else {
-            if(valor[i] < menorVenda) {
-                menorVenda = valor[i];
-                pedidoMenorVenda = codigoPedido[i];
+        // Validando se o valor recebido e o mais barato ate o momento
+        if(i == 0) {  // Se estiver na primeira iteracao do laco, o valor atual sera sempre o mais barato ate o momento
+            valorMaisBarato = valores[i];
+            strcpy(maisBarato, pizza[i]);
+            posicaoMaisBarato = i;
+        } else {  // Nas demais iteracoes, sera necessario comparar se o valor atual lido e menor que o valorMaisBarato 
+            if(valores[i] < valorMaisBarato) {
+                valorMaisBarato = valores[i];
+                strcpy(maisBarato, pizza[i]);
+                posicaoMaisBarato = i;
             }
         }
     }
 
-    mediaFaturamento = (faturamentoTotal / 10);  // Calculando a media de faturamento no dia
-    system("cls");
-    printf("\nPedidos\n");
-    // Laco for para exibir todos os pedidos 
-    for(i = 0; i < 10; i++) {
-        printf("[%d] - %d pizzas de %s || Total = R$ %.2f\n", codigoPedido[i], qtd, pizza[i], valor[i]);
+    // Trocando as posicoes
+    if(valorMaisCaro == valorMaisBarato);   // Se os valores forem iguais, nao ha necessidade de inverter posicoes
+    else {
+        // Invertendo o nome da pizza mais cara com a mais barata
+        strcpy(auxPizza, pizza[posicaoMaisCaro]);  // Armazenando na variavel auxiliar a pizza que esta na posicao do mais caro
+        strcpy(pizza[posicaoMaisCaro], pizza[posicaoMaisBarato]); // Armazenando a pizza mais barata no lugar da mais cara
+        strcpy(pizza[posicaoMaisBarato], auxPizza); // Armazenando a pizza mais cara, que estava na variavel auxiliar, no lugar da mais barata
+
+        // Invertendo o preco da pizza mais cara com a mais barata
+        aux = valores[posicaoMaisCaro];  // Armazenando na variavel auxiliar o valor mais caro
+        valores[posicaoMaisCaro] = valores[posicaoMaisBarato]; // Armazenando o valor mais barato no lugar do mais caro
+        valores[posicaoMaisBarato] = aux;  // Armazenando o valor do mais caro, que estava na variavel auxiliar, no lugar da variavel mais barata
     }
-    printf("\nA maior venda foi o pedido %d, no valor de R$ %.2f.", pedidoMaiorVenda, maiorVenda);
-    printf("\nA menor venda foi o pedido %d, no valor de R$ %.2f.", pedidoMenorVenda, menorVenda);
-    printf("\nA media de faturamento no dia foi de R$ %.2f.", mediaFaturamento);
-    printf("\nTotal de faturamento: R$ %.2f.", faturamentoTotal);
+
+    // Laco for para exibir o cardapio
+    printf("\n\n-=-=-=-=-=-=-==-=-=-=-=-==-=-=-==-=-=-=-\n\tCARDAPIO\n");
+    for(i = 0; i < 5; i++) {
+        printf("Pizza de %s || R$ %.2f\n", pizza[i], valores[i]);
+    }
+
 }

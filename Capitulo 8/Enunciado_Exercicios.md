@@ -29,6 +29,11 @@ inversa.
     - Não sera necessario, nesse exercicio, validar se há datas negativas, meses maiores que 12, etc.. Se ater somente à validação do padrão digitado pelo usuario;
     - Ao final, exibir todas as datas, e na frente de cada um a mensagem 'OK' caso esteja dentro dos padroes, ou 'Formato invalido' caso haja alguma não conformidade;
 
+11 - Faça um programa para ajudar uma pizzaria a registrar seu cardapio. O programa deve ler 10 tipos de pizza e seus valores, e imprimir ao final o cardapio de acordo com os seguintes requisitos:
+    - Inverter a posição (o nome da pizza e o valor) da pizza mais cara com a pizza mais barata digitada;
+    - Caso haja mais de uma pizza com o mesmo valor mais caro, considerar apenas uma delas para o item acima;
+    - Caso haja mais de uma pizza com o mesmo valor mais barato, considerar apenas uma delas para o primeiro item;
+    - Ao final, exibir todo o cardapio ja com as posições invertidas;
 
 
 12 - ...
@@ -40,20 +45,7 @@ inversa.
     - No item acima não será necessário validar se os numeros são positivos ou negativos, somente se são numeros ou não;
     - Ao final, exibir todos os CPFs digitados, e na frente de cada um a mensagem 'OK' caso esteja dentro dos padroes, ou 'Formato invalido' caso haja alguma não conformidade;
 
-
-
-
-**** AINDA NÃO ESTÃO FEITOS: ****
-
-11 - Faça um programa para ajudar uma pizzaria a registrar e analisar alguns pedidos. O programa deve ler 10 pedidos, de acordo com os seguintes requisitos: 
-    - O numero do pedido não precisa ser sequencial;
-    - Cada pedido deve conter apenas um tipo de pizza, a quantidade de pizzas, e o valor total;
-    - Se o valor total do pedido passou de R$ 200,00, ele deve receber um desconto de 10% no valor total antes de ser armazenado;
-    - Ao final, imprimir na tela todos os pedidos lidos, qual foi a maior venda, a menor venda, e a média de faturamento por pedido naquele dia e o total de faturamento;
-
-12 - ...
-  
-14 - Faça um programa que lê uma duas matrizes de 3x3 e um determinante para multiplicar esta matriz.
+14 - ...
 
 15 - Faça um programa que leia uma matriz 4 x 4 de numeros inteiros. Em seguida, baseado nessa matriz lida, gere e imprima uma nova matriz 4 x 4 seguindo as seguintes regras: 
     - Os elementos da primeira linha devem ser colocados na ultima linha, e os da ultima linha devem ser colocados na primeira.
@@ -64,6 +56,18 @@ inversa.
     4  5  6  7              7  6  5  4 
     4  5  6  7      =>      7  6  5  4    
     5  6  7  8              1  2  3  4
+
+
+
+
+**** AINDA NÃO ESTÃO FEITOS: ****
+
+
+12 - ...
+  
+14 - Faça um programa que lê uma duas matrizes de 3x3 e um determinante para multiplicar esta matriz.
+
+
 
 
 

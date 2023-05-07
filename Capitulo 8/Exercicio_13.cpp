@@ -38,7 +38,6 @@ int main() {
                             aux = 1;
                     }
                 }
-
                 // Se invalido for 1 apos ele ter percorrido a string, mensagem[i] deve se manter 0. Senao, mensagem[i] sera 1
                 mensagem[i] = (aux == 0) ? 1 : 0;
             }       
