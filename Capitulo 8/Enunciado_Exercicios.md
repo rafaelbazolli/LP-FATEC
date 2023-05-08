@@ -50,7 +50,7 @@ inversa.
     - No item acima não será necessário validar se os numeros são positivos ou negativos, somente se são numeros ou não;
     - Ao final, exibir todos os CPFs digitados, e na frente de cada um a mensagem 'OK' caso esteja dentro dos padroes, ou 'Formato invalido' caso haja alguma não conformidade;
 
-14 - ...
+14 - 14 - Faça um programa que lê uma duas matrizes 3x3 de numeros inteiros e efetue a multiplicação dessas matrizes. Imprimir a matriz resultante.
 
 15 - Faça um programa que leia uma matriz 4 x 4 de numeros inteiros. Em seguida, baseado nessa matriz lida, gere e imprima uma nova matriz 4 x 4 seguindo as seguintes regras: 
     - Os elementos da primeira linha devem ser colocados na ultima linha, e os da ultima linha devem ser colocados na primeira.
@@ -68,7 +68,7 @@ inversa.
 **** AINDA NÃO ESTÃO FEITOS: ****
 
   
-14 - Faça um programa que lê uma duas matrizes de 3x3 e um determinante para multiplicar esta matriz.
+
 
 
 
