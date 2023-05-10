@@ -25,14 +25,14 @@
 
 12 - Faça um programa em C que receba dois vetores de inteiros de tamanho 6 e verifique se eles são iguais, ou seja, se todos os elementos de um vetor são iguais aos elementos do outro vetor na mesma posição. Exibir a mensagem se são iguais ou não.
 
-13 - Faça um programa em C que receba um vetor de 6 números inteiros e um número inteiro X, e retorne todos os pares de elementos do vetor que somados resultam em X. Os pares podem se repetir, 2 + 4 ou 4 + 2...
+13 - Faça um programa em C que receba um vetor de 6 números inteiros, e além desse vetor, um número inteiro X, e retorne todos os pares de elementos do vetor que somados resultam em X. Os pares podem se repetir, 2 + 4 ou 4 + 2...
 
 14 - Preencha um vetor com 10 números inteiros dados pelo usuário(vetor1). Em seguida, com base no vetor1, deve ser gerado um novo vetor de 10 números inteiros, onde: 
     - As 5 primeiras posições deverão ser preenchidas pelos valores que estão nas posições pares do vetor1;
     - As 5 últimas posições deverão ser preenchidas pelos valores que estão nas posições ímpares do vetor1;
 Exemplo: 
-Vetor de entrada: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-Saída esperada:   [1, 3, 5, 7, 9, 2, 4, 6, 8, 10]
+Vetor de entrada: [12, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Saída esperada:   [12, 3, 5, 7, 9, 2, 4, 6, 8, 10]
 
 
 15 - Preencha dois vetores de 10 posições com valores inteiros aleatórios entre 1 a 20. Depois deve ser gerado outro vetor de 10 posições, de acordo com as regras:
