@@ -4,7 +4,7 @@
 #include<time.h>
 
 main() {
-	int vc1, vc2, vc3, vc4, vc5, pc1, pc2, pc3, pc4, pc5, somaVC = 0, somaPC = 0, opcaoSortearNovamente, sorteioAtual = 0;
+	int vc1, vc2, vc3, vc4, vc5, pc1, pc2, pc3, pc4, pc5, somaVC = 0, somaPC = 0, opcaoSortearNovamente, sorteioAtual = 1;
 	bool fim = false, finalizando = false;
 
 	srand(time(NULL));  // Semente random
@@ -16,7 +16,6 @@ main() {
 	pc2 = (rand() % 10) + 1;
 	somaVC = somaVC + vc1 + vc2;
 	somaPC = somaPC + pc1 + pc2;
-	sorteioAtual = 1; 
 
 	menu:
 	system("cls");

@@ -7,15 +7,28 @@ A complexidade ciclomática está diretamente relacionada ao número de caminhos
 
 
 2. Como calcular a complexidade ciclomática
-A complexidade ciclomática é calculada por meio da fórmula:
+Existem basicamente três formas de calcular a complexidade. São as seguintes:
+* Usando a fórmula:
+V(G) = R
 
+Onde:
+R é o número de regiões do grafo de fluxo(regiões internas + a região externa).
 
+* Usando a fórmula:
 M = E - N + 2
 
 Onde:
-M é a complexidade ciclomática
-E é o número de arestas do grafo de fluxo de controle do programa
-N é o número de nós do grafo de fluxo de controle do programa
+M é a complexidade ciclomática;
+E é o número de arestas do grafo de fluxo de controle do programa;
+N é o número de nós do grafo de fluxo de controle do programa;
+
+* Usando a fórmula:
+V = P + 1
+
+Onde:
+V é a complexidade ciclomática;
+P é o numero de componentes conexos ou comandos de desvio;
+
 
 Os seguintes elementos são considerados nós no grafo:
 - Instruções simples, como atribuições, declarações de variáveis, chamadas de funções, etc.
@@ -60,4 +73,4 @@ Além disso, a complexidade ciclomática pode ser usada para definir critérios 
 
 
 7. Exemplos práticos de aplicação da complexidade ciclomática
-
+...
