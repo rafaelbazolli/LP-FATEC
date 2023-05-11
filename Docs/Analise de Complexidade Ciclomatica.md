@@ -9,6 +9,7 @@ A complexidade ciclomática está diretamente relacionada ao número de caminhos
 2. Como calcular a complexidade ciclomática
 A complexidade ciclomática é calculada por meio da fórmula:
 
+
 M = E - N + 2
 
 Onde:
