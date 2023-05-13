@@ -1,4 +1,4 @@
-# Exercicios Vetor
+# Exercicios Vetor - Capítulo 7
 
 1 - Preencher um vetor com 6 numeros fornecidos pelo usuario e mostra-los na tela.
 

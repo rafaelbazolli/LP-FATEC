@@ -1,4 +1,4 @@
-# Exercicios Matriz(Array/Vetor Multidimensional)
+# Exercicios Matriz(Array/Vetor Multidimensional) - Capítulo 8
 
 1 - Preencher um vetor com 3 nomes com 20 letras no máximo cada. Imprimir os Nomes.
 
