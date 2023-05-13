@@ -6,14 +6,17 @@
 - Imprimir para o usuario o resultado dessa soma. E tambem imprimir o endereço das variaveis 'num' e da variavel criada no primeiro item;
 
 
+
 2 - Criar um programa com ponteiro que atribua duas constantes a duas variáveis do tipo inteiro e depois:
 - Inserir o endereço das variáveis em dois ponteiros, e imprimir os valores dos ponteiros;
 - Atribuir um ponteiro em outro e depois imprimir os valores dos ponteiros;
 - Atribuir um numero inteiro a um ponteiro já usado, e também atribuir uma variável a outra e depois imprimir tudo(valores dos ponteiros e das variaveis).
 
 
+
 3 - Criar um programa que crie e atribua um valor qualquer para cada tipo de variável solicitada: inteiro, float, char, boolean. Em seguida, mostre na tela:
 - Qual tipo de variável, seguido do valor que lhe foi atribuido, do espaço que ela ocupa em memória;
+
 
 
 4 - Criar um programa em C, que receba duas palavras do usuário. Declarando a biblioteca string.h, você poderá usar as funções strncpy(), strcat(), entre outros. Em sua maioria elas utilizam ponteiros como parâmetros para indicar a posição das strings que estão sendo tratadas. Tendo isso em mente, realize as operações abaixo de acordo com os requisitos:
@@ -28,6 +31,7 @@ nova string deve receber somente: "Fat"
 Saída esperada, após concatenar: "TaubateFat"
 
 
+
 5 - Faça um programa em C, para concatenar palavras. O programa deve seguir as seguintes regras:
 - Declarar uma string, que depois irá armazenar as palavras que serão lidas;
 - Usando um laço FOR, leia 4 palavras digitadas pelo usuário.
@@ -36,6 +40,7 @@ Saída esperada, após concatenar: "TaubateFat"
 Exemplo:
 entradas do usuário: "Fatec", "Taubate", "Teste", "Teste2", "Teste3"
 saída esperada após concatenar: "FatecTaubateTesteTeste2Teste3"
+
 
 
 6 - Faça um programa em C para verificar se uma string digitada pelo usuário está contida dentro das palavras. O programa deve atender aos seguintes requisitos:
@@ -50,6 +55,7 @@ palavra a ser buscada: "Ca"
 saída esperada: 3
 
 
+
 7 - Refaça o exercício 6, porém agora você deve considerar:
 - A comparação não deve considerar diferenças entre letras maiúsculas e minúsculas;
 - O comando usado para realizar a comparação deve ser o strstr(), da biblioteca string.h;
@@ -61,12 +67,14 @@ palavra a ser buscada: "Ca"
 saída esperada: 4
 
 
+
 8 - Crie um programa em C que receba uma palavra digitada pelo usuário, e armazene numa variável. Essa palavra deve ser enviada como parâmetro para uma função que você vai criar. Seguem os requisitos do programa: 
 - A função que você deve criar pode ser do tipo 'void';
 - Na criação dela, será necessário indicar que ela receberá um ponteiro do tipo char. Ex: void receberPalavra(char *palavra) {}
 - A única coisa que a função precisa fazer é imprimir na tela a palavra digitada pelo usuário;
 - Ao chamar a função dentro do programa, o parâmetro a ser passado é um ponteiro para a posição da palavra na memória, pode ser feita de algumas formas, uma delas seria: receberPalavra(palavraLida);
 - Passando palavraLida sem os '[]', ela se torna um ponteiro para o endereço inicial da variavel palavraLida;
+
 
 
 9 - Faça um programa em C que receba um vetor de 5 números inteiros do usuário. Esse vetor, da mesma maneira que no exercício anterior(Exercício 8), deve ser enviado como parâmetro para uma função que você vai criar. Seguem os requisitos:
@@ -76,6 +84,7 @@ saída esperada: 4
 Exemplo:
 vetor de entrada do usuário: [1, 2, 3, 4, 5]
 vetor de saída deve ser:     [6, 7, 8, 9, 10]
+
 
 
 10 - Crie um programa em C que leia um vetor de 7 números inteiros(Esse exercício usará princípios similares ao Exercício 9). Depois disso:
@@ -89,6 +98,7 @@ vetor de entrada do usuário: [2, 3, 4, 5, 6, 7, 8]
 vetor de saída deve ser:     [0, 1, 0, 1, 0, 1, 0]
 
 
+
 11 - Faça um programa em C, que receba uma palavra digitada pelo usuário e imprima na tela quantas letras 'a' ou 'A' essa palavra possui. Porém devem ser seguidas as seguintes regras: 
 - Crie uma função do tipo int, e ela deve receber como parâmetro um ponteiro char e o inteiro contador(por exemplo: int minhaFuncao(char *letras, int k));
 - Dentro da função, você pode manipular esse vetor de caracteres lido(no caso, 'letras'), percorre-lo através de um laço FOR, e contar quantas vezes apareceu a letra 'a' ou 'A', acumulando o valor no contador('k');
@@ -98,6 +108,7 @@ vetor de saída deve ser:     [0, 1, 0, 1, 0, 1, 0]
 Exemplo:
 entrada do usuário: "parAlelepipedo"
 saída esperada: 2
+
 
 
 12 - Crie um programa em C para auxiliar uma locadora de carros a gerenciar sua frota de veículos. O programa deve receber o nome do locador, modelo do veículo, a data de devolução do veículo, a quilometragem(quando foi retirado), a quilometragem(ao ser devolvido) de 7 veículos. Seguem os requisitos do programa: 
