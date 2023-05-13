@@ -49,7 +49,7 @@ Acima de 50: O código é extremamente complexo e altamente arriscado de manter.
 
 
 
-5. Redução da complexidade ciclomática
+4. Redução da complexidade ciclomática
 Existem várias técnicas que podem ser usadas para reduzir a complexidade ciclomática de um programa, algumas delas são:
 - Divisão de funções em funções menores: se uma função tiver uma complexidade ciclomática muito alta, ela pode ser dividida em várias funções menores, cada uma com uma responsabilidade específica. Isso não apenas reduz a complexidade ciclomática, mas também torna o código mais modular e fácil de entender e manter.
 
@@ -63,7 +63,7 @@ Existem várias técnicas que podem ser usadas para reduzir a complexidade ciclo
 
 
 
-6. Relação entre complexidade ciclomática e teste de software
+5. Relação entre complexidade ciclomática e teste de software
 A complexidade ciclomática tem uma relação muito importante com o teste de software, pois ela é uma medida que pode ser usada para avaliar a qualidade do código-fonte e determinar a extensão do esforço de teste necessário.
 
 A partir da complexidade ciclomática, é possível identificar as partes mais críticas do código e definir testes mais eficazes para cobrir todos os caminhos possíveis do programa. Em geral, quanto maior a complexidade ciclomática, maior a chance de existirem erros no código e, consequentemente, maior a necessidade de testes mais rigorosos.
@@ -72,5 +72,5 @@ Além disso, a complexidade ciclomática pode ser usada para definir critérios 
 
 
 
-7. Exemplos práticos de aplicação da complexidade ciclomática
+6. Exemplos práticos de aplicação da complexidade ciclomática
 ...
