@@ -29,3 +29,12 @@ frequencia = int(input("Digite a frequencia: "))
 situacao = validarAprovacao(frequencia, nota1, nota2, nota3)
 
 print(f"\nSituacao do aluno {nomeAluno}: {situacao}")
+
+
+# def validarAprovacao(freq, nota1, nota2, nota3):
+#     if(freq < 70): return "Reprovado"
+#     media =  (nota1 + nota2) / 2
+#     if(media < 3): return "Reprovado"
+#     if(media >= 7): return "Aprovado"
+#     if(((media + nota3) / 2) > 5): return "Aprovado"
+#     else: return "Reprovado"

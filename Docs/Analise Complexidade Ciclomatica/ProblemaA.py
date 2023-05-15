@@ -1,5 +1,5 @@
 
-def converterHexa(numero):
+def converterEmHexa(numero):
     if(numero == '0000'): return '0'
     if(numero == '0001'): return '1'
     if(numero == '0010'): return '2'
@@ -19,8 +19,8 @@ def converterHexa(numero):
 
 codigoErro = str(input())
 
-parte1 = '0x' + converterHexa(codigoErro[:4]) + converterHexa(codigoErro[4:8])
-parte2 = '0x' + converterHexa(codigoErro[8:12]) + converterHexa(codigoErro[12:])
+parte1 = '0x' + converterEmHexa(codigoErro[:4]) + converterEmHexa(codigoErro[4:8])
+parte2 = '0x' + converterEmHexa(codigoErro[8:12]) + converterEmHexa(codigoErro[12:])
 codigoConvertido = parte1 + ' ' + parte2
 print(codigoConvertido)
     
