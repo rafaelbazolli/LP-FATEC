@@ -1,7 +1,7 @@
 
 # Validar se o aluno foi aprovado ou não baseado em frequencia e notas
 def validarAprovacao(freq, nota1, nota2, nota3):
-    if(freq < 70):   #1
+    if(freq < 75):   #1
         return "Reprovado"
     else:            #2
         media =  (nota1 + nota2) / 2
@@ -17,7 +17,6 @@ def validarAprovacao(freq, nota1, nota2, nota3):
                     return "Reprovado"
 
 
-
 # Recebendo os valores
 nomeAluno = input("Digite o nome do aluno: ")
 nota1 = float(input("Digite a primeira nota: "))
@@ -31,10 +30,11 @@ situacao = validarAprovacao(frequencia, nota1, nota2, nota3)
 print(f"\nSituacao do aluno {nomeAluno}: {situacao}")
 
 
+
+
+
 # def validarAprovacao(freq, nota1, nota2, nota3):
-#     if(freq < 70): return "Reprovado"
-#     media =  (nota1 + nota2) / 2
-#     if(media < 3): return "Reprovado"
-#     if(media >= 7): return "Aprovado"
-#     if(((media + nota3) / 2) > 5): return "Aprovado"
-#     else: return "Reprovado"
+#     if(freq > 70): #1
+#         media =  (nota1 + nota2) / 2
+#         if((media >= 7) or (((media + nota3) / 2) > 5)): return "Aprovado" #2
+#     return "Reprovado"

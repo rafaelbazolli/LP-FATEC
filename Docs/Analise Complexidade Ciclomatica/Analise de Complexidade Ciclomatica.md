@@ -15,7 +15,7 @@ Onde:
 R é o número de regiões do grafo de fluxo(regiões internas + a região externa).
 
 * Usando a fórmula:
-M = E - N + 2
+V(G) = E - N + 2
 
 Onde:
 M é a complexidade ciclomática;
