@@ -1,6 +1,6 @@
-#include <stdio.h>  // Responsavel pelos comandos printf, scanf
-#include <string.h>  // Responsavel pelos comandos gets 
-#include <windows.h> // Responsavel pelo comando system
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
 
 
 int main() {

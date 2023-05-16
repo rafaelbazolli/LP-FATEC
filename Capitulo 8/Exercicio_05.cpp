@@ -1,4 +1,4 @@
-#include <stdio.h>   // Responsavel pelos comandos printf e scanf
+#include <stdio.h> 
 
 int main() {
     int matriz[4][4], lin, col, aux;
@@ -23,7 +23,7 @@ int main() {
     printf("\nDiagonal Principal:\n");
     for(aux = 0; aux < 4; aux++) {  // Percorre as linhas da matriz
         printf("%d\n", matriz[aux][aux]);  // Cada linha tera uma impressao somente, e ela deve ser [0][0],[1][1],[2][2],[3][3]
-        for(int i = 0; i <= aux; i++) {  // Para cada linha que ele pula, da um print de um espaco a mais que o anterior
+        for(int i = 0; i <= aux; i++) {  // Para cada elemento impresso, completa o espaco anterior com print vazio " "
             printf("  ");
         }
     }

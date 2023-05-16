@@ -1,5 +1,5 @@
-#include <stdio.h>  // Responsavel pelos comandos printf, scanf
-#include <windows.h> // Responsavel pelo comando system
+#include <stdio.h>
+#include <windows.h>
 
 int main() {
     int i, j, k, matriz[4][4], matrizNova[4][4], aux[4];

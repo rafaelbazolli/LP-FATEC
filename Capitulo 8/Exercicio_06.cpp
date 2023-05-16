@@ -1,4 +1,4 @@
-#include <stdio.h>   // Responsavel pelos comandos printf e scanf
+#include <stdio.h>
 
 int main() {
     int matriz[3][3], novaMatriz[3][3], i, j;

@@ -5,7 +5,7 @@
 <br>
 
 2 - Faça um programa que lê três palavras do teclado e imprime as três palavras(maximo 30 caracteres cada) na ordem
-inversa.
+inversa que foram digitadas.
 
 <br>
  
@@ -46,7 +46,7 @@ OBS.: 1 matriz para as notas tipo float, uma para os nomes, um vetor para a méd
 10 - Crie um programa em C que leia 7 datas fornecidas pelo usuario. Apos isso, valide cada uma das datas com relacao a posicao das '/', para informar ao usuario se a data esta num padrao valido ou nao. Seguem alguns requisitos:  
 - As datas que o usuario pode fornecer devem ser no padrao xx/xx/xxxx;  
 - Não sera necessario, nesse exercicio, validar se há datas negativas, meses maiores que 12, etc.. Se ater somente à validação do padrão digitado pelo usuario;  
-- Ao final, exibir todas as datas, e na frente de cada um a mensagem 'OK' caso esteja dentro dos padroes, ou 'Formato invalido' caso haja alguma não conformidade;  
+- Ao final, exibir todas as datas, e na frente de cada um a mensagem 'OK' caso esteja dentro dos padrões, ou 'Formato invalido' caso haja alguma não conformidade;  
 
 <br>
  
@@ -58,7 +58,7 @@ OBS.: 1 matriz para as notas tipo float, uma para os nomes, um vetor para a méd
 
 <br>
 
-12 - Crie um programa em C para ajudar uma Organização a calcular os custos que tiveram nas premiações de uma competição de atletismo. O programa deve receber os 15 nomes dos países que foram representados na competição, seguidos do total de medalhas de ouro, prata e bronze que conseguiram. Seguem os demais requisitos:   
+12 - Crie um programa em C para ajudar uma Organização a calcular os custos que tiveram nas premiações de uma competição de atletismo. O programa deve receber os 10 nomes dos países que foram representados na competição, seguidos do total de medalhas de ouro, prata e bronze que conseguiram. Seguem os demais requisitos:   
 - Calcular o custo que tiveram com as medalhas dos competidores, sendo os valores: Ouro = R$ 110,00 | Prata = R$ 75,50 | Bronze = R$ 42,00;  
 - Exibir o custo total de cada tipo de medalha, e de todas juntas;  
 - Exibir qual foi o país vencedor da competição, baseado na quantidade de medalhas de ouro, prata e bronze. Considerar para o desempate, respectivamente: quem teve maior quantidade de medalhas de ouro, de prata, e de bronze.  
@@ -69,13 +69,12 @@ OBS.: 1 matriz para as notas tipo float, uma para os nomes, um vetor para a méd
 13 - Crie um programa em C que leia 4 numeros de CPF(contendo as pontuações) fornecidos pelo usuario. Após isso, validar:  
 - Se o CPF digitado está dentro do padrão xxx.xxx.xxx-xx, onde 'x' representam os numeros;  
 - O tamanho do CPF não pode ultrapassar o tamanho do padrão;  
-- Validar se no lugar dos 'x' foram digitados numeros, caso contrario, também está fora do padrão;  
-- No item acima não será necessário validar se os numeros são positivos ou negativos, somente se são numeros ou não;  
+- Validar se no lugar dos 'x' foram digitados numeros e se eles são positivos. Caso contrario para qualquer uma das duas condições, o CPF também está fora do padrão;  
 - Ao final, exibir todos os CPFs digitados, e na frente de cada um a mensagem 'OK' caso esteja dentro dos padroes, ou 'Formato invalido' caso haja alguma não conformidade;  
 
 <br>
 
-14 - 14 - Faça um programa que lê uma duas matrizes 3x3 de numeros inteiros e efetue a multiplicação dessas matrizes. Imprimir a matriz resultante.  
+14 - Faça um programa que lê uma duas matrizes 3x3 de numeros inteiros e efetue a multiplicação dessas matrizes. Imprimir a matriz resultante.  
 
 <br>
 

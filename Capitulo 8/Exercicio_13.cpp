@@ -1,6 +1,6 @@
-#include <stdio.h>  // Responsavel pelos comandos printf, scanf
-#include <string.h>  // Responsavel pelos comandos gets e strlen
-#include <ctype.h> // Responsavel pelo comando isdigit
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 
 int main() {
@@ -21,7 +21,6 @@ int main() {
 
         // Validando o tamanho do cpf digitado. Se for 14, executa o bloco
         if(tamanho == 14) {
-
             // Validando se as pontuacoes estao na posicao correta. Se sim, ele segue a execucao
             if(cpf[i][3] == '.' && cpf[i][7] == '.' && cpf[i][11] == '-') {
 
@@ -32,16 +31,15 @@ int main() {
                     if(j == 3 || j == 7 || j == 11) {
                         ;                
                     } else {
-                        // Comando isdigit usado para validar se e um numero. Se sim, nao faz nada(';'); Senao, ele da um break     
-                        if(isdigit(cpf[i][j]));
-                        else
+                        // Comando isdigit usado para validar se e um numero.    
+                        if(isdigit(cpf[i][j]) && cpf[i][j] >= 0)
                             aux = 1;
                     }
                 }
-                // Se invalido for 1 apos ele ter percorrido a string, mensagem[i] deve se manter 0. Senao, mensagem[i] sera 1
-                mensagem[i] = (aux == 0) ? 1 : 0;
             }       
         }
+        // Se todos os digitos foram validados, e estiver tudo ok, aux ainda vale 1; caso contrario, ela ainda retem o valor 0(linh 20)
+        mensagem[i] = aux;
     }
 
     // Laco for para exibir os cpfs apos a validacao

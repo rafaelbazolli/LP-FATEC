@@ -1,5 +1,5 @@
-#include <stdio.h>  // Responsavel pelos comandos printf e scanf
-#include <string.h>  // Responsavel pelos comandos gets e strlen
+#include <stdio.h> 
+#include <string.h>
 
 int main() {
     int i, j, tamanho, mensagem[7] = {0};  // {0} inicializa todas as posicoes do vetor com o valor 0

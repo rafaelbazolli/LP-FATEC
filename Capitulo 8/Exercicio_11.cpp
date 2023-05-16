@@ -1,6 +1,6 @@
-#include <stdio.h>  // Responsavel pelos comandos printf, scanf
-#include <string.h>  // Responsavel pelos comandos gets 
-#include <windows.h> // Responsavel pelo comando system
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
 
 
 int main() {
@@ -9,7 +9,7 @@ int main() {
     float valores[10], aux = 0, valorMaisCaro = 0, valorMaisBarato;
 
     // Laco for para receber os valores
-    for(i = 0; i < 5; i++) {
+    for(i = 0; i < 10; i++) {
         fflush(stdin);
         printf("Digite o sabor da pizza: ");
         gets(pizza[i]);
@@ -53,7 +53,7 @@ int main() {
 
     // Laco for para exibir o cardapio
     printf("\n\n-=-=-=-=-=-=-==-=-=-=-=-==-=-=-==-=-=-=-\n\tCARDAPIO\n");
-    for(i = 0; i < 5; i++) {
+    for(i = 0; i < 10; i++) {
         printf("Pizza de %s || R$ %.2f\n", pizza[i], valores[i]);
     }
 

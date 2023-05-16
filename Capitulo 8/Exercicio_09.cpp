@@ -1,4 +1,4 @@
-#include <stdio.h>  // Responsavel pelos comandos printf e scanf
+#include <stdio.h>
 #include <string.h>  // Responsavel pelos comandos gets e strlen
 #include <ctype.h>  // Responsavel pelo comando tolower
 
@@ -19,7 +19,8 @@ int main() {
         tamanho = strlen(palavras[i]);  // Armazenando o tamanho da palavra atual que esta sendo iterada
 
         for(j = 0; j < tamanho; j++) {
-            // A linha abaixo usa a funcao tolower para transformar as letras em minusculo e fazer uma unica comparacao para ver onde ha vogais
+            
+            // A linha abaixo usa a funcao tolower(da lib ctype.h) para transformar as letras em minusculo e fazer uma unica comparacao para ver onde ha vogais
             vogais += (tolower(palavras[i][j]) == 'a' || tolower(palavras[i][j]) == 'e' || tolower(palavras[i][j]) == 'i' || tolower(palavras[i][j]) == 'o' || tolower(palavras[i][j]) == 'u') ? 1 : 0;
 
             // Trocando as letras 'a' ou 'A' por 'X'

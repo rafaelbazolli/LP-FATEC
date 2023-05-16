@@ -1,5 +1,5 @@
-#include <stdio.h>   // Responsavel pelos comandos printf e scanf
-#include<math.h>  // Responsavel pelo comando sqrt
+#include <stdio.h>
+#include <math.h>
 
 int main() {
     float matriz[4][3], novaMatriz[4][3];

@@ -1,4 +1,4 @@
-#include <stdio.h>  // Responsavel pelos comandos printf e scanf
+#include <stdio.h>
 #include <string.h>  // Responsavel pelos comandos gets e strlen
 
 int main() {
