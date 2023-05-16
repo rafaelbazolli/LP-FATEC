@@ -81,9 +81,10 @@ OBS.: 1 matriz para as notas tipo float, uma para os nomes, um vetor para a méd
 15 - Faça um programa que leia uma matriz 4 x 4 de numeros inteiros. Em seguida, baseado nessa matriz lida, gere e imprima uma nova matriz 4 x 4 seguindo as seguintes regras:    
 - Os elementos da primeira linha devem ser colocados na ultima linha, e os da ultima linha devem ser colocados na primeira;  
 - Os elementos da linha 2 e da linha 3 da matriz devem ser colocados na ordem inversa que foram lidos;   
-  
+  <pre>
     Matriz de exemplo  || Nova matriz  
     1  2  3  4              5  6  7  8   
     4  5  6  7              7  6  5  4   
     4  5  6  7      =>      7  6  5  4      
     5  6  7  8              1  2  3  4  
+</pre>
