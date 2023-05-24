@@ -1,7 +1,19 @@
-
 # Problema E - Exibição de Peixes
-# Pegar sempre do aquario que tem menos fêmeas e transferi-las para o com mais femeas.
-# Assim que zerar as fêmeas de um aquario, no proximo dia ja vai ter mais uma femea. Aí movemos ela pra outro aquario
-# Só um aquario será usado pra transformar os peixes. Zerou as fêmeas, movemos os machos pra lá. 
+# mover peixe, e transformar peixe, nessa ordem, uma vez ao dia
+# ver qual tem a maior qtd de femeas, somar o restante das femeas dos outros. Elas devem ser a qtd de movimentos ****
+# se houver só machos num tanque, a formula é (qtd femeas para mover + qtd machos -1)
+# se houver machos no tanque que as femeas ficarão, a formula é (qtd femeas para mover + qtdmachos + 1)
+vetorPeixes = []; movimentos = 0
+qtdTanques = int(input())
 
+for tanque in range(qtdTanques):        
+    entrada = str(input())
+    vetorPeixes.append(list(map(int, entrada.split())))
+
+vetorPeixesOrdenado = sorted(vetorPeixes, key=lambda elemento: elemento[-1], reverse=True)
+
+
+
+print(movimentos)
+    
 
