@@ -1,9 +1,6 @@
 # Problema E - Exibição de Peixes
-# mover peixe, e transformar peixe, nessa ordem, uma vez ao dia
-# ver qual tem a maior qtd de femeas, somar o restante das femeas dos outros. Elas devem ser a qtd de movimentos ****
-# se houver só machos num tanque, a formula é (qtd femeas para mover + qtd machos -1)
-# se houver machos no tanque que as femeas ficarão, a formula é (qtd femeas para mover + qtdmachos + 1)
-vetorPeixes = []; movimentos = 0
+
+vetorPeixes = []; femeasParaMover = 0; aux = 0
 qtdTanques = int(input())
 
 for tanque in range(qtdTanques):        
@@ -11,9 +8,14 @@ for tanque in range(qtdTanques):
     vetorPeixes.append(list(map(int, entrada.split())))
 
 vetorPeixesOrdenado = sorted(vetorPeixes, key=lambda elemento: elemento[-1], reverse=True)
+tanqueReferencia = vetorPeixesOrdenado[0]
+vetorPeixesOrdenado.pop(0)
 
+for tanque in vetorPeixesOrdenado:
+    femeasParaMover += tanque[1]
+    aux += tanque[0]
 
-
+totalMachos = aux + tanqueReferencia[0]
+movimentos = (femeasParaMover + (totalMachos + 1)) if (aux < totalMachos) else (femeasParaMover + (totalMachos - 1))
+#3 qtd machos maior na 1 e 3
 print(movimentos)
-    
-

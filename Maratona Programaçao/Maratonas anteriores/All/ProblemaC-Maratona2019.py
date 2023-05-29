@@ -1,37 +1,34 @@
-# #Cruzamento perigoso
+posicaoVeiculos = []; acidentes = 0
+entrada = input()
+linhas, colunas, numVeiculos = map(int, entrada.split())
 
-# posicaoVeiculos = []
-# entrada = str(input())
-# linhas, colunas, numVeiculos = map(int, entrada.split())
+for veiculo in range(numVeiculos):
+    aux = []
+    entrada = input()
+    posX, posY, direcao = entrada.split()
+    posX = int(posX); posY = int(posY)
 
-# for veiculo in range(numVeiculos):
-#     entrada = str(input())
-#     posX, posY, direcao = entrada.split()
-#     posX = int(posX); posY = int(posY)
-    
-#     if(direcao == 'N'):
-#         aux = []
-#         aux.append([posX, posY])
-#         for i in range(posY, 0):
-#             aux.append([posX, i])
-#         posicaoVeiculos.append(aux)
-#     elif(direcao == 'S'):
-#         aux = []
-#         aux.append([posX, posY])
-#         for i in range(posY, linhas):
-#             aux.append([posX, i])
-#         posicaoVeiculos.append(aux)
-#     elif(direcao == 'L'):
-#         aux = []
-#         aux.append([posX, posY])
-#         for i in range(posX, colunas):
-#             aux.append([posX, i])
-#         posicaoVeiculos.append(aux)
-#     elif(direcao == 'O'):
-#         aux = []
-#         aux.append([posX, posY])
-#         for i in range(posX, 0):
-#             aux.append([posX, i])
-#         posicaoVeiculos.append(aux)
-# print(posicaoVeiculos)
-    
+    # Todas as possiveis localizações, seguindo suas respectivas direções
+    if direcao == 'N':
+        for i in range(posX, -1, -1):
+            aux.append([i, posY])
+    elif direcao == 'S':
+        for i in range(posX, linhas):
+            aux.append([i, posY])
+    elif direcao == 'L':
+        for i in range(posY, colunas):
+            aux.append([posX, i])
+    elif direcao == 'O':
+        for i in range(posY, -1, -1):
+            aux.append([posX, i])
+    posicaoVeiculos.append(aux)
+
+coordenadas_visitadas = set()
+for veiculo in posicaoVeiculos:
+    for posicao in veiculo:
+        if tuple(posicao) in coordenadas_visitadas:
+            acidentes += 1
+        else:
+            coordenadas_visitadas.add(tuple(posicao))
+
+print(acidentes)
