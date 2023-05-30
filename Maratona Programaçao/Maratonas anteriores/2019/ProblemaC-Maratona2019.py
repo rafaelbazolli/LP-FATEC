@@ -1,3 +1,5 @@
+# Ainda não concluido
+
 posicaoVeiculos = []; acidentes = 0
 entrada = input()
 linhas, colunas, numVeiculos = map(int, entrada.split())
