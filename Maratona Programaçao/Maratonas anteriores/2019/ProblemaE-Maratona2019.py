@@ -17,5 +17,4 @@ for tanque in vetorPeixesOrdenado:
 
 totalMachos = aux + tanqueReferencia[0]
 movimentos = (femeasParaMover + (totalMachos + 1)) if (aux < totalMachos) else (femeasParaMover + (totalMachos - 1))
-#3 qtd machos maior na 1 e 3
 print(movimentos)
