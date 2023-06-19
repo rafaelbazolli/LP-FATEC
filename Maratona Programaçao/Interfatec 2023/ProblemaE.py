@@ -5,10 +5,10 @@ entrada = str(input()) # Localização do Crausio
 lin, col = map(int, entrada.split()) 
 
 crausio = [lin - 1, col - 1]
-entrada = str(input()) # String da movimentação
+entrada = str(input()) # String da movimentação # Exemplo: CDCBEDBECB
 bateu = 0
 
-for letra in entrada:
+for letra in entrada: 
     if carga > 0:
         carga -= 1
         if letra == 'C':
